@@ -21,14 +21,14 @@ let home = document.getElementById('home');
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
-                b3.style.background = '#ffe600c2';
+                b3.style.background = '#00FF7F';
             }else if(man == 42){
                 b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + (Math.pow(mans,2) * 42 / 5).toFixed(2) + ' Ton' ;
                 a3.innerHTML = 'الحمل القطع للواير'  +"<br>" + (Math.pow(mans,2) * 42).toFixed(2)  + ' Ton';
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
-                b3.style.background = '#ffe600c2';
+                b3.style.background = '#00FF7F';
             }
             
         }
@@ -41,5 +41,6 @@ let home = document.getElementById('home');
         home.onclick = function(){
             location.reload()
         }
+
 
 
