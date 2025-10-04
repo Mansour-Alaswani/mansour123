@@ -23,8 +23,8 @@ let home = document.getElementById('home');
                 b3.style.display = 'block';
                 b3.style.background = '#ffe600c2';
             }else if(man == 42){
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + Math.pow(mans,2) * 42 / 5 + ' Ton' ;
-                a3.innerHTML = 'الحمل القطع للواير'  +"<br>" + Math.pow(mans,2) * 42  + ' Ton';
+                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + Math.pow(mans,2) * 42 / 5).toFixed(2) + ' Ton' ;
+                a3.innerHTML = 'الحمل القطع للواير'  +"<br>" + Math.pow(mans,2) * 42).toFixed(2)  + ' Ton';
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
@@ -41,3 +41,4 @@ let home = document.getElementById('home');
         home.onclick = function(){
             location.reload()
         }
+
