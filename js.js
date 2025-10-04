@@ -5,6 +5,9 @@ let in1 = document.getElementById('in1');
 let in2 = document.getElementById('in2');
 let b3 = document.getElementById('b3');
 let a3 = document.getElementById('a3');
+let list = document.getElementById('list');
+let poweraa = document.getElementById('poweraa');
+let home = document.getElementById('home');
 
 
 
@@ -28,4 +31,13 @@ let a3 = document.getElementById('a3');
                 b3.style.background = '#ffe600c2';
             }
             
+        }
+
+
+        list.onclick = function(){
+            poweraa.style.display = 'block';
+
+        }
+        home.onclick = function(){
+            location.reload()
         }
