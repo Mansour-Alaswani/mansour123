@@ -7,7 +7,7 @@
 
 :root
 {
-    --cle:#222327;
+    --cle:#0592b5;
 }
 
 body
@@ -146,4 +146,37 @@ body
 .navigation ul li:nth-child(5).active ~ .indicator
 {
     transform: translateX(calc(70px * 4));
+}
+
+.poweraa{
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 150px;
+    
+}
+
+.poweraa input{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.but{
+    padding: 10px;
+    border-radius: 8px;
+    background: greenyellow;
+}
+
+.but:hover{
+    background: red;
+}
+
+.lod3{
+    border-radius: 22px;
+    font-size: 24px;
+    font-family: inherit;
+    margin: 10px;
 }
