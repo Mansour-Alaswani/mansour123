@@ -16,15 +16,15 @@ let home = document.getElementById('home');
             let mans = in1.value * 0.039 ;
             let man = in2.value ;
             if(man == 45){
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
-                a3.innerHTML = 'الحمل القطع للواير'  +"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
+                b3.innerHTML = '(WLL)الحمل المسموح للعمل'  +"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
+                a3.innerHTML = '(BL)حمل قطع الواير'  +"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
                 b3.style.background = '#00FF7F';
             }else if(man == 42){
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + (Math.pow(mans,2) * 42 / 5).toFixed(2) + ' Ton' ;
-                a3.innerHTML = 'الحمل القطع للواير'  +"<br>" + (Math.pow(mans,2) * 42).toFixed(2)  + ' Ton';
+                b3.innerHTML = '(WLL)الحمل المسموح للعمل'  +"<br>" + (Math.pow(mans,2) * 42 / 5).toFixed(2) + ' Ton' ;
+                a3.innerHTML = '(BL)حمل قطع الواير'  +"<br>" + (Math.pow(mans,2) * 42).toFixed(2)  + ' Ton';
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
@@ -41,6 +41,7 @@ let home = document.getElementById('home');
         home.onclick = function(){
             location.reload()
         }
+
 
 
 
