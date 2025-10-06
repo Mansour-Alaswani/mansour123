@@ -86,7 +86,18 @@ let pppp = document.getElementById('pppp');
         // عدد الكلبسات لربط الواير////////////////
 
 
+        let lista = document.getElementById('lista');
+        let div1 = document.getElementById('div1');
 
+
+            lista.onclick = function(){
+                poweraa.style.display = 'none';
+                img.style.display = 'none';
+                pppp.style.display = 'none';
+                poweraaa.style.display = 'none';
+                div1.style.display = 'block';
+
+        }
 
 
 
