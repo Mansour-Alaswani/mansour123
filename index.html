@@ -27,7 +27,7 @@
         <input id="in1" type="number" placeholder="ادخل قطر الواير بالملي">
         <input id="in2" type="number" placeholder="ادخل معامل الكسر (42,45)">
         <br>
-        <button onclick="but3()" class="but" id="but">اضغط</button>
+        <button  class="but" id="but">اضغط</button>
     </div>
 
         <!-- قدرة الوايرات -->
@@ -40,7 +40,7 @@
         <h1 class="lod3" id="b4"></h1>
         <input id="in3" type="number" placeholder="ادخل قطر الواير بالملي">
         <br>
-        <button onclick="but3()" class="but" id="but1">اضغط</button>
+        <button  class="but" id="but1">اضغط</button>
     </div>
 
         <!-- عدد الكلبسات -->
@@ -127,11 +127,45 @@
 
 
 
+<div class="div1" id="div1">
+    <h2 class="h11"> حساب الاجهاد علي الوايرات <br>
+      في حالة (W,N,L,H)</h2>
+    <h1 id="t1"></h1>
+    <input class="input2" id="W" type="number" placeholder="W"> <br>
+    <input class="input2"  id="N" type="number" placeholder="N"> <br>
+    <input class="input2" id="Len" type="number" placeholder="Len"> <br>
+    <input class="input2" id="H" type="number" placeholder="H"><br> 
+    <button   class="but" id="but3">اضغط</button>
+</div>
+
+
+<script>
+    
+
+    let t1 = document.getElementById('t1');
+    let t2 = document.getElementById('t2');
+    let W = document.getElementById('W');
+    let N = document.getElementById('N');
+    let Len = document.getElementById('Len');
+    let H = document.getElementById('H');
+    let but3 = document.getElementById('but3');
+
+    but3.onclick = function(){
+        if(W.value !=''){
+            teation1 = (W.value / N.value )*(  Len.value / H.value);
+
+            t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
+            t1.style.borderRadius = '12px';
+            t1.style.padding = '10px';
+            t1.style.background = '#00FF7F';
+        }
+    }
+</script>
+
 
 
 <script type="module" src="js.js"></script>
 </body>
 </html>
-
 
 
