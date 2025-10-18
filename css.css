@@ -247,13 +247,19 @@ p{
 
 
 
+.div1{
+    display: none;
+    text-align: center;
+}
 
 
 
-
-
-
-
+.input2{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
 
 
 
