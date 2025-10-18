@@ -1,106 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="hse-icon-with-a-shield-vector.jpg">
+</head>
+<body>
 
 
-let but = document.getElementById('but');
-let in1 = document.getElementById('in1');
-let in2 = document.getElementById('in2');
-let b3 = document.getElementById('b3');
-let a3 = document.getElementById('a3');
-let list = document.getElementById('list');
-let poweraa = document.getElementById('poweraa');
-let home = document.getElementById('home');
-let img = document.getElementById('img');
-let pppp = document.getElementById('pppp');
+    <!-- السورة في المام -->
+        <img class="img" src="IMG_٢٠٢٥١٠٠٣_١٩٥٢٣٧.jpg" id="img"> 
+        <br>
+        <p id="pppp">HSE.Mansour Mohamed<br> 01067393986</p>
+        <br>
+
+    <!-- السورة في المام -->
+
+
+    <!-- قدرة الوايرات -->
+    <div class="poweraa" id="poweraa">
+        <h1 class="h11">قدرة الوايرات</h1>
+        <h1 class="lod3" id="b3"></h1>
+        <h1 class="lod3" id="a3"></h1>
+        <input id="in1" type="number" placeholder="ادخل قطر الواير بالملي">
+        <input id="in2" type="number" placeholder="ادخل معامل الكسر (42,45)">
+        <br>
+        <button  class="but" id="but">اضغط</button>
+    </div>
+
+        <!-- قدرة الوايرات -->
+
+
+        <!-- عدد الكلبسات -->
+    
+    <div class="poweraa" id="poweraaa">
+        <h1 class="h11">عدد الكلبسات</h1>
+        <h1 class="lod3" id="b4"></h1>
+        <input id="in3" type="number" placeholder="ادخل قطر الواير بالملي">
+        <br>
+        <button  class="but" id="but1">اضغط</button>
+    </div>
+
+        <!-- عدد الكلبسات -->
 
 
 
 
-///////////////////////////////////////////معادلة حمولة الواير///////////////////////////////////////////////////
-        but.onclick = function(){
-            let mans = in1.value * 0.039 ;
-            let man = in2.value ;
-            if(man == 45){
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
-                a3.innerHTML = 'حمل القطع للواير'  +"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
-                a3.style.display = 'block';
-                a3.style.background = 'red';
-                b3.style.display = 'block';
-                b3.style.background = '#00FF7F';
-            }else if(man == 42){
-                a3.innerHTML = 'حمل القطع للواير'  +"<br>" + Math.pow(mans,2) * 42  + ' Ton';
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + Math.pow(mans,2) * 42 / 5 + ' Ton' ;
-                a3.style.display = 'block';
-                a3.style.background = 'red';
-                b3.style.display = 'block';
-                b3.style.background = '#00FF7F	';
-            }
+
+
+
+
+<!-- //////////////////////////////////////////////////navigation////////////////////////////////////////////////// -->
+
+    <div class="navigation">
+        <ul>
+
+            <li class="list">
+                <a href="#" id="lista" >
+                    <span class="icon">
+                       <img src="crane.png" alt="" width="25px">
+
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#" id="settings">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <span class="text">settings</span>
+                </a>
+            </li>
+                        <li class="list active">
+                <a href="#" id="home">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+                <li class="list">
+                <a href="#" id="list">
+                    <span class="icon">
+                        <img src="wire.png" alt="" width="25px">
+                    </span>
+                    <span class="text">list</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
             
+        </ul>
+
+    </div>
+
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item)=>
+            item.classList.remove('active'));
+            this.classList.add('active');
         }
 
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+    </script>
 
-        list.onclick = function(){
-            poweraa.style.display = 'block';
-            img.style.display = 'none';
-            poweraaa.style.display = 'none';
-            pppp.style.display = 'none';
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<!-- /////////////////////////////////////////////////////////navigation/////////////////////////////////////////////////// -->
+
+
+
+
+<div class="div1" id="div1">
+    <h2 class="h11"> حساب الاجهاد علي الوايرات <br>
+      في حالة (W,N,L,H)</h2>
+    <h1 id="t1"></h1>
+    <input class="input2" id="W" type="number" placeholder="W"> <br>
+    <input class="input2"  id="N" type="number" placeholder="N"> <br>
+    <input class="input2" id="Len" type="number" placeholder="Len"> <br>
+    <input class="input2" id="H" type="number" placeholder="H"><br> 
+    <button   class="but" id="but3">اضغط</button>
+</div>
+
+
+<script>
+    
+
+    let t1 = document.getElementById('t1');
+    let t2 = document.getElementById('t2');
+    let W = document.getElementById('W');
+    let N = document.getElementById('N');
+    let Len = document.getElementById('Len');
+    let H = document.getElementById('H');
+    let but3 = document.getElementById('but3');
+
+    but3.onclick = function(){
+        if(W.value !=''){
+            teation1 = (W.value / N.value )*(  Len.value / H.value);
+
+            t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
+            t1.style.borderRadius = '12px';
+            t1.style.padding = '10px';
+            t1.style.background = '#00FF7F';
         }
-
-/////////////////////////////////////////////معادلة حمولة الواير/////////////////////////////////////////////
-
-
-        home.onclick = function(){
-            poweraa.style.display= 'none';
-            poweraaa.style.display= 'none';
-            img.style.display= 'block';
-            pppp.style.display= 'block';
-            
-
-        }
-
-
-        // عدد الكلبسات لربط الواير////////////////
-
-        let poweraaa = document.getElementById('poweraaa');
-        let b4 = document.getElementById('b4');
-        let but1 = document.getElementById('but1');
-        let in3 = document.getElementById('in3');
-        let settings = document.getElementById('settings');
-
-        but1.onclick = function(){
-            let m = in3.value * 0.04;
-            let mm = m * 4 +1;
-
-            if( mm >= 1 && in3.value !=''){
-                b4.innerHTML = Math.ceil(mm);
-            }
-
-        }
-
-            settings.onclick = function(){
-                poweraa.style.display = 'none';
-                img.style.display = 'none';
-                pppp.style.display = 'none';
-                poweraaa.style.display = 'block';
-
-        }
-
-        // عدد الكلبسات لربط الواير////////////////
-
-
-        let lista = document.getElementById('lista');
-        let div1 = document.getElementById('div1');
-
-
-            lista.onclick = function(){
-                poweraa.style.display = 'none';
-                img.style.display = 'none';
-                pppp.style.display = 'none';
-                poweraaa.style.display = 'none';
-                div1.style.display = 'block';
-
-        }
+    }
+</script>
 
 
 
-
+<script type="module" src="js.js"></script>
+</body>
+</html>
 
 
