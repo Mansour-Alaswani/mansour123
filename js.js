@@ -29,7 +29,7 @@ let pppp = document.getElementById('pppp');
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
-                b3.style.background = '#00FF7F	';
+                b3.style.background = '#00FF7F';
             }
             
         }
@@ -71,6 +71,7 @@ let pppp = document.getElementById('pppp');
 
             if( mm >= 1 && in3.value !=''){
                 b4.innerHTML = Math.ceil(mm);
+                b4.style.background = '#00FF7F';
             }
 
         }
@@ -98,6 +99,7 @@ let pppp = document.getElementById('pppp');
                 div1.style.display = 'block';
 
         }
+
 
 
 
