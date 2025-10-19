@@ -17,15 +17,15 @@ let pppp = document.getElementById('pppp');
             let mans = in1.value * 0.039 ;
             let man = in2.value ;
             if(man == 45){
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
-                a3.innerHTML = 'حمل القطع للواير'  +"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
+                b3.innerHTML = 'Safe Working Load '  +"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
+                a3.innerHTML = 'Ultimate Load'  +"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
                 b3.style.background = '#00FF7F';
             }else if(man == 42){
-                a3.innerHTML = 'حمل القطع للواير'  +"<br>" + Math.pow(mans,2) * 42  + ' Ton';
-                b3.innerHTML = 'الحمل المسموح للعمل'  +"<br>" + Math.pow(mans,2) * 42 / 5 + ' Ton' ;
+                a3.innerHTML = 'Ultimate Load'  +"<br>" + Math.pow(mans,2) * 42  + ' Ton';
+                b3.innerHTML = 'Safe Working Load '  +"<br>" + Math.pow(mans,2) * 42 / 5 + ' Ton' ;
                 a3.style.display = 'block';
                 a3.style.background = 'red';
                 b3.style.display = 'block';
@@ -99,6 +99,7 @@ let pppp = document.getElementById('pppp');
                 div1.style.display = 'block';
 
         }
+
 
 
 
