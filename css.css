@@ -163,13 +163,15 @@ body
     padding: 9px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px ;
+    box-shadow: 5px 5px 5px;
     font-size: 15px;
+    position: relative;
+    top: -71px;
 }
 
 .poweraa input:hover{
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 5px ;
@@ -185,6 +187,8 @@ body
     box-shadow: 10px 5px 5px ;
     font-size: 15px;
     transition: .3s;
+    position: relative;
+    top: -85px;
 
 
 }
@@ -196,9 +200,11 @@ body
 
 .lod3{
     border-radius: 22px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: inherit;
-    margin: 10px;
+    margin: 7px;
+    position: relative;
+    top: -72px;
 }
 
 .poweraa, .poweraaa{
@@ -243,16 +249,10 @@ p{
     top: -80px;
 }
 
-
-
-
-
 .div1{
     display: none;
     text-align: center;
 }
-
-
 
 .input2{
     text-align: center;
@@ -260,7 +260,5 @@ p{
     margin: 10px;
     border-radius: 10px;
 }
-
-
 
 
