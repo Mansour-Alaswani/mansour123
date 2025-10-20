@@ -248,6 +248,10 @@ p{
     position: relative;
     top: -65px;
 }
+.t1{
+    position: relative;
+    top: -55px;
+}
 
 .div1{
     display: none;
@@ -320,4 +324,11 @@ p{
 input{
     position:relative;
     top: -50px;
+}
+
+
+
+h2{
+    position: relative;
+    top: -55px;
 }
