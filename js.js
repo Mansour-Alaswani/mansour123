@@ -10,9 +10,24 @@ let img = document.getElementById('img');
 let pppp = document.getElementById('pppp');
 let teation21 = document.getElementById('teation21');
 let none1111 = document.getElementById('none1111');
+let t1 = document.getElementById('t1');
+let t2 = document.getElementById('t2');
+let W = document.getElementById('W');
+let N = document.getElementById('N');
+let Len = document.getElementById('Len');
+let H = document.getElementById('H');
+let but3 = document.getElementById('but3');
 
+    but3.onclick = function(){
+        if(W.value !=''){
+            let teation1 = (W.value / N.value )*(  Len.value / H.value);
 
-
+            t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
+            t1.style.borderRadius = '12px';
+            t1.style.padding = '10px';
+            t1.style.background = '#00FF7F';
+        }
+    }
 
 ///////////////////////////////////////////معادلة حمولة الواير///////////////////////////////////////////////////
         but.onclick = function(){
