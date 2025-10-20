@@ -8,6 +8,8 @@ let poweraa = document.getElementById('poweraa');
 let home = document.getElementById('home');
 let img = document.getElementById('img');
 let pppp = document.getElementById('pppp');
+let teation21 = document.getElementById('teation21');
+let none1111 = document.getElementById('none1111');
 
 
 
@@ -40,6 +42,7 @@ let pppp = document.getElementById('pppp');
             img.style.display = 'none';
             poweraaa.style.display = 'none';
             pppp.style.display = 'none';
+            teation21.style.display = 'none';
             div1.style.display = 'none';
         }
 
@@ -51,6 +54,7 @@ let pppp = document.getElementById('pppp');
             poweraaa.style.display= 'none';
             img.style.display= 'block';
             div1.style.display= 'none';
+            teation21.style.display= 'none';
             pppp.style.display= 'block';
             
 
@@ -81,6 +85,7 @@ let pppp = document.getElementById('pppp');
                 img.style.display = 'none';
                 pppp.style.display = 'none';
                 div1.style.display = 'none';
+                teation21.style.display = 'none';
                 poweraaa.style.display = 'block';
 
         }
@@ -96,13 +101,63 @@ let pppp = document.getElementById('pppp');
                 img.style.display = 'none';
                 pppp.style.display = 'none';
                 poweraaa.style.display = 'none';
+                teation21.style.display = 'none';
                 div1.style.display = 'block';
 
         }
 
+        
 
 
 
 
 
 
+    let alnatL11 = document.getElementById('alnatL11');
+    let alnatL21 = document.getElementById('alnatL21');
+    let W11 = document.getElementById('W11');
+    let D11 = document.getElementById('D11');
+    let D21 = document.getElementById('D21');
+    let L11= document.getElementById('L11');
+    let L21 = document.getElementById('L21');
+    let H11 = document.getElementById('H11');
+    let but41 = document.getElementById('but41');
+    let but51 = document.getElementById('but51');
+
+
+    but41.onclick = function(){
+        if(W11.value && D11.value && D21.value && L11.value && L21.value && H11.value !=''){
+                let bast11 = W11.value * D21.value * L11.value ;
+                let mkam11 = H11.value * (+D11.value + +D21.value);
+                alnatL11.innerHTML = 'tension wire-1 >>' + (bast11 / mkam11).toFixed(1) + 'Ton';
+                alnatL11.style.background = '#00ff3c';
+                alnatL21.style.background = '#009eff';
+                let bast21 = W11.value * D11.value * L21.value;
+                let mkam21 = H11.value * (+D11.value + +D21.value);
+                alnatL21.innerHTML = 'tension wire-2  >>'+ (bast21 / mkam21).toFixed(1) + 'Ton';
+                alnatL11.style.display = 'block';
+                alnatL21.style.display = 'block';
+        }
+    }
+
+    but51.onclick = function(){
+        W11.value = '';
+        D11.value = '';
+        D21.value = '';
+        L11.value = '';
+        L21.value = '';
+        H11.value = '';
+        alnatL11.style.display = 'none';
+        alnatL21.style.display = 'none';
+    }
+
+
+    none1111.onclick = function(){
+        poweraa.style.display = 'none';
+        img.style.display = 'none';
+        pppp.style.display = 'none';
+        poweraaa.style.display = 'none';
+        div1.style.display = 'none';
+        teation21.style.display = 'block';
+
+    }
