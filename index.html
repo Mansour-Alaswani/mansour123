@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HSE.Mansour</title>
     <link rel="stylesheet" href="css.css">
     <link rel="icon" href="hse-icon-with-a-shield-vector.jpg">
 </head>
 <body>
-
-
     <!-- السورة في المام -->
         <img class="img" src="IMG_٢٠٢٥١٠٠٣_١٩٥٢٣٧.jpg" id="img"> 
         <br>
@@ -45,12 +43,6 @@
     </div>
 
         <!-- عدد الكلبسات -->
-
-
-
-
-
-
 
 
 <!-- //////////////////////////////////////////////////navigation////////////////////////////////////////////////// -->
@@ -130,8 +122,8 @@
 
 <div class="div1" id="div1">
     <h2 class="h11"> حساب الاجهاد علي الوايرات <br>
-      في حالة (W,N,L,H)</h2>
-    <h1 id="t1"></h1>
+    في حالة (W,N,L,H)</h2>
+    <h1 class="t1" id="t1"></h1>
     <input class="input2" id="W" type="number" placeholder="وزن الطرد "> <br>
     <input class="input2"  id="N" type="number" placeholder="عدد الوايرات "> <br>
     <input class="input2" id="Len" type="number" placeholder="طول الوايرات"> <br>
@@ -143,16 +135,10 @@
 
 
 
-
-
-
-
-
-
 <!-- ////////////////////////////////////////////////// -->
 
 
-    <div id="teation21" class="teation21">
+<div id="teation21" class="teation21">
         <h1 class="h11">حساب الاجهاد في حالة تغير (COG)</h1>
         <h2 id="alnatL11"></h2>
         <h2 id="alnatL21"></h2>
@@ -166,41 +152,14 @@
             <button id="but51">امسح</button>
             <button id="but41">احسب</button>
         </div>
-    </div>
-
-
+</div>
 
 
 <!-- ////////////////////////////////////////////////// -->
-
-
-<script>
-    
-
-    let t1 = document.getElementById('t1');
-    let t2 = document.getElementById('t2');
-    let W = document.getElementById('W');
-    let N = document.getElementById('N');
-    let Len = document.getElementById('Len');
-    let H = document.getElementById('H');
-    let but3 = document.getElementById('but3');
-
-    but3.onclick = function(){
-        if(W.value !=''){
-            teation1 = (W.value / N.value )*(  Len.value / H.value);
-
-            t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
-            t1.style.borderRadius = '12px';
-            t1.style.padding = '10px';
-            t1.style.background = '#00FF7F';
-        }
-    }
-</script>
 
 
 
 <script type="module" src="js.js"></script>
 </body>
 </html>
-
 
