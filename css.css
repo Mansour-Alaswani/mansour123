@@ -90,7 +90,6 @@ body
 
 }
 
-
 .indicator{
     position: absolute;
     top: -50%;
@@ -154,8 +153,7 @@ body
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    top: 150px;
-    
+    top: 150px;   
 }
 
 .poweraa input{
@@ -189,8 +187,6 @@ body
     transition: .3s;
     position: relative;
     top: -65px;
-
-
 }
 
 .but:hover{
@@ -219,12 +215,9 @@ body
     box-shadow: 1px 1px 54px 14px #ffffff;
 }
 
-
-
 .hh1{
     background: rgb(164, 164, 164);
 }
-
 
 p{
     position: absolute;
@@ -235,7 +228,6 @@ p{
     border-radius: 10px;
     padding: 10px;
 }
-
 
 .h11{
     text-align: center;
@@ -265,70 +257,90 @@ p{
     border-radius: 10px;
 }
         
-        .teation21{
-            text-align: center;
-            display: b;
-            padding: 25px;
-            display: none;
+.teation21{
+    text-align: center;
+    display: b;
+    padding: 25px;
+    display: none;
+}
 
-        }
+.teation21 input{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;  
+    box-shadow: 1px 1px 10px ;
+}
 
-        .teation21 input{
-            text-align: center;
-            padding: 5px;
-            margin: 5px;
-            border-radius: 20px;  
-            box-shadow: 1px 1px 10px ;
+.buta7ceb1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+}
 
-        }
-
-
-
-        .buta7ceb1{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            position: relative;
-            top: -50px;
-
-        }
-
-        button{
-            text-align: center;
-            margin: 15px;
-            padding: 15px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 14px 3px;
-            font-size: 15px;
-            font-style: italic; 
-        }
-        #alnatL11, #alnatL21{
-            border-radius: 20px;
-            padding: 5px;
-            margin: 5px;
-            font-size: 20px;
-            display: none;
-            box-shadow: 5px 5px 14px 3px;
-
-
-        }
-
-        #but41{
-            background: #47af02;
-        }
-        #but51{
-            background: #ef3603;
-        }
-
-
+button{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px 3px;
+    font-size: 15px;
+    font-style: italic; 
+}
+#alnatL11, #alnatL21{
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    display: none;
+    box-shadow: 5px 5px 14px 3px;
+}
+#but41{
+    background: #47af02;
+}
+#but51{
+    background: #ef3603;
+}
 input{
     position:relative;
     top: -50px;
 }
-
-
-
 h2{
     position: relative;
     top: -55px;
+}
+.mn1n1m1{
+    background: #515151;
+    text-align: center;
+    margin-top: 535px;
+    margin-bottom: 130px;
+    border-radius: 100px;
+    box-shadow: 8px 0px 22px 8px;        
+}
+
+.butomz{
+    background: #ff9b00;
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+}
+
+.butomzd1{
+    display: none;
+    text-align: center;
+    margin-bottom: 110px;
+    width: 90%;
+}
+
+
+.imges{
+    width: 100%;
+    border-radius: 10px;
+}
+
+Embed{
+    width: 100%;
+    height: 200px;
 }
