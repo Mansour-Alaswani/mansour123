@@ -322,8 +322,8 @@ h2{
 
 .butomz{
     background: #ff9b00;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
     margin: 5px;
 }
@@ -348,3 +348,4 @@ Embed{
     width: 100%;
     height: 200px;
 }
+
