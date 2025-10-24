@@ -18,6 +18,16 @@ let Len = document.getElementById('Len');
 let H = document.getElementById('H');
 let but3 = document.getElementById('but3');
 
+
+// -------------------------------------------------------------------------
+
+let mn1n1m1 = document.getElementById('mn1n1m1');
+let butomzd1 =document.getElementById('butomzd1');
+let butomzd2 =document.getElementById('butomzd2');
+let butomzd3 =document.getElementById('butomzd3');
+
+
+
     but3.onclick = function(){
         if(W.value !=''){
             let teation1 = (W.value / N.value )*(  Len.value / H.value);
@@ -51,7 +61,6 @@ let but3 = document.getElementById('but3');
             
         }
 
-
         list.onclick = function(){
             poweraa.style.display = 'block';
             img.style.display = 'none';
@@ -59,20 +68,25 @@ let but3 = document.getElementById('but3');
             pppp.style.display = 'none';
             teation21.style.display = 'none';
             div1.style.display = 'none';
+            mn1n1m1.style.display = 'none';
+            butomzd1.style.display= 'none';
+            butomzd2.style.display= 'none';
+            
         }
 
 /////////////////////////////////////////////معادلة حمولة الواير/////////////////////////////////////////////
 
 
         home.onclick = function(){
+            mn1n1m1.style.display= 'block';
             poweraa.style.display= 'none';
             poweraaa.style.display= 'none';
             img.style.display= 'block';
             div1.style.display= 'none';
-            teation21.style.display= 'none';
             pppp.style.display= 'block';
-            
-
+            teation21.style.display= 'none';
+            butomzd1.style.display= 'none';
+            butomzd2.style.display= 'none';
         }
 
 
@@ -100,8 +114,11 @@ let but3 = document.getElementById('but3');
                 img.style.display = 'none';
                 pppp.style.display = 'none';
                 div1.style.display = 'none';
-                teation21.style.display = 'none';
                 poweraaa.style.display = 'block';
+                teation21.style.display = 'none';
+                mn1n1m1.style.display = 'none';
+                butomzd1.style.display= 'none';
+                butomzd2.style.display= 'none';
 
         }
 
@@ -116,16 +133,12 @@ let but3 = document.getElementById('but3');
                 img.style.display = 'none';
                 pppp.style.display = 'none';
                 poweraaa.style.display = 'none';
-                teation21.style.display = 'none';
                 div1.style.display = 'block';
-
+                teation21.style.display = 'none';
+                mn1n1m1.style.display = 'none';
+                butomzd1.style.display= 'none';
+                butomzd2.style.display= 'none';
         }
-
-        
-
-
-
-
 
 
     let alnatL11 = document.getElementById('alnatL11');
@@ -164,15 +177,47 @@ let but3 = document.getElementById('but3');
         H11.value = '';
         alnatL11.style.display = 'none';
         alnatL21.style.display = 'none';
-    }
 
+    }
 
     none1111.onclick = function(){
         poweraa.style.display = 'none';
         img.style.display = 'none';
         pppp.style.display = 'none';
         poweraaa.style.display = 'none';
-        div1.style.display = 'none';
         teation21.style.display = 'block';
+        div1.style.display = 'none';
+        mn1n1m1.style.display = 'none';
+        butomzd1.style.display= 'none';
+        butomzd2.style.display= 'none';
 
     }
+
+
+// ---------------------------------------------------------------------
+
+
+
+    butomz1.onclick = function(){
+        teation21.style.display = 'none';
+        poweraa.style.display = 'none';
+        img.style.display = 'none';
+        pppp.style.display = 'none';
+        poweraaa.style.display = 'none';
+        div1.style.display = 'none';
+        mn1n1m1.style.display = 'none';
+        butomzd1.style.display = 'block';
+    }
+    butomz2.onclick = function(){
+        teation21.style.display = 'none';
+        poweraa.style.display = 'none';
+        img.style.display = 'none';
+        pppp.style.display = 'none';
+        poweraaa.style.display = 'none';
+        div1.style.display = 'none';
+        mn1n1m1.style.display = 'none';
+        butomzd1.style.display = 'none';
+        butomzd2.style.display = 'block';
+    }
+
+
