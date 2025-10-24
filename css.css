@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: revert ;
+    font-family: cursive ;
 }
 
 :root
@@ -23,12 +23,12 @@ body
     position: fixed;
     width: 400px;
     height: 70px;
-    background:#fff;
+    background:#ffffffe8;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    bottom: 10px;
+    bottom: 0px;
 }
 
 .navigation ul{
@@ -312,7 +312,7 @@ h2{
     top: -55px;
 }
 .mn1n1m1{
-    background: #515151;
+    background: #51515129;
     text-align: center;
     margin-top: 535px;
     margin-bottom: 130px;
@@ -321,11 +321,12 @@ h2{
 }
 
 .butomz{
-    background: #ff9b00;
-    width: 100px;
-    height: 100px;
+    background: #0000007f;
+    width: 120px;
+    height: 120px;
     border-radius: 100px;
     margin: 5px;
+    color: #fff;
 }
 
 .butomzd1{
@@ -348,5 +349,3 @@ Embed{
     width: 100%;
     height: 200px;
 }
-
-
