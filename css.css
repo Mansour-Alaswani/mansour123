@@ -322,9 +322,10 @@ h2{
 
 .butomz{
     background: #ff9b00;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 100px;
+    margin: 5px;
 }
 
 .butomzd1{
@@ -334,6 +335,9 @@ h2{
     width: 90%;
 }
 
+div button h1{
+    font-size: 150%;
+}
 
 .imges{
     width: 100%;
