@@ -27,6 +27,11 @@ let butomzd2 =document.getElementById('butomzd2');
 let butomzd3 =document.getElementById('butomzd3');
 
 
+//--------------------------------------------------------------------------
+    let b44 = document.getElementById('b44');
+    let prcentcreans = document.getElementById('prcentcreans');
+    let prcentcrean1 = document.getElementById('prcentcrean1');
+    let prcentcreansbut = document.getElementById('prcentcreansbut');
 
     but3.onclick = function(){
         if(W.value !=''){
@@ -193,10 +198,7 @@ let butomzd3 =document.getElementById('butomzd3');
 
     }
 
-
 // ---------------------------------------------------------------------
-
-
 
     butomz1.onclick = function(){
         teation21.style.display = 'none';
@@ -220,4 +222,14 @@ let butomzd3 =document.getElementById('butomzd3');
         butomzd2.style.display = 'block';
     }
 
-
+//------------------------------------------------------------------------
+prcentcreansbut.onclick = function(){
+    let yosaue = prcentcrean1.value / prcentcreans.value * 100 ;
+    if(yosaue <= 75 ){
+        b44.innerHTML = yosaue.toFixed(1) + '%' + '<br>' + 'Safe';
+        b44.style.background = 'gold';
+    }else{
+        b44.innerHTML = yosaue.toFixed(1) + '%' + '<br>' + 'Unsafe';
+        b44.style.background = 'red';
+    }
+}
