@@ -16,7 +16,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ababab;
+    background: #3c9bdead;
 }
 
 .navigation{
@@ -321,12 +321,13 @@ h2{
 }
 
 .butomz{
-    background: #0000007f;
+    background: #2ceb06ed;
     width: 120px;
     height: 120px;
     border-radius: 100px;
     margin: 5px;
-    color: #fff;
+    color: black;
+    box-shadow: 10px 1px 1px 1px;
 }
 
 .butomzd1{
