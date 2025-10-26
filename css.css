@@ -317,7 +317,7 @@ h2{
     margin-top: 535px;
     margin-bottom: 130px;
     border-radius: 100px;
-    box-shadow: 8px 0px 22px 8px;        
+    box-shadow: 5px 5px 10px 2px;        
 }
 
 .butomz{
@@ -350,3 +350,4 @@ Embed{
     width: 100%;
     height: 200px;
 }
+
