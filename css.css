@@ -307,11 +307,11 @@ input{
     position:relative;
     top: -50px;
 }
-/* h2{
+h2{
     position: relative;
     top: -55px;
     text-align: center;
-} */
+} 
 .mn1n1m1{
     background: #51515129;
     text-align: center;
@@ -408,3 +408,4 @@ Embed{
     position: relative;
     top: -30px;
 }
+
