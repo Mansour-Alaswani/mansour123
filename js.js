@@ -17,7 +17,6 @@ let N = document.getElementById('N');
 let Len = document.getElementById('Len');
 let H = document.getElementById('H');
 let but3 = document.getElementById('but3');
-//////////////////////////////////////////////////////////////////////////
 let Lifting = document.getElementById('Lifting');
 let h12 = document.getElementById('h12');
 let alnatL12 = document.getElementById('alnatL12');
@@ -41,8 +40,6 @@ let butomz4 = document.getElementById('butomz4');
 let but511 = document.getElementById('but511');
 let but411 = document.getElementById('but411');
 //////////////////////////////////////////////////////////////////////////
-
-// -------------------------------------------------------------------------
 
 let mn1n1m1 = document.getElementById('mn1n1m1');
 let butomzd1 =document.getElementById('butomzd1');
@@ -339,3 +336,4 @@ butomz4.onclick = function(){
 
 
 ////////////////////////////////////////////////////////////////////////////////////
+
