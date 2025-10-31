@@ -17,7 +17,30 @@ let N = document.getElementById('N');
 let Len = document.getElementById('Len');
 let H = document.getElementById('H');
 let but3 = document.getElementById('but3');
-
+//////////////////////////////////////////////////////////////////////////
+let Lifting = document.getElementById('Lifting');
+let h12 = document.getElementById('h12');
+let alnatL12 = document.getElementById('alnatL12');
+let Crane = document.getElementById('Crane');
+let Maximum = document.getElementById('Maximum');
+let Block = document.getElementById('Block');
+let Outriggers = document.getElementById('Outriggers');
+let Total = document.getElementById('Total');
+let Weight = document.getElementById('Weight');
+let Contingency = document.getElementById('Contingency');
+let Safe = document.getElementById('Safe');
+let Totallifted = document.getElementById('Totallifted');
+let Dynamic = document.getElementById('Dynamic');
+let Calculation = document.getElementById('Calculation');
+let Utilization = document.getElementById('Utilization');
+let Rated = document.getElementById('Rated');
+let Counterweight = document.getElementById('Counterweight');
+let Boom = document.getElementById('Boom');
+let Radius = document.getElementById('Radius');
+let butomz4 = document.getElementById('butomz4');
+let but511 = document.getElementById('but511');
+let but411 = document.getElementById('but411');
+//////////////////////////////////////////////////////////////////////////
 
 // -------------------------------------------------------------------------
 
@@ -76,6 +99,9 @@ let butomzd3 =document.getElementById('butomzd3');
             mn1n1m1.style.display = 'none';
             butomzd1.style.display= 'none';
             butomzd2.style.display= 'none';
+            Lifting.style.display = 'none';
+            alnatL12.style.display = 'none';
+            but511.style.display = 'none';
             
         }
 
@@ -92,6 +118,9 @@ let butomzd3 =document.getElementById('butomzd3');
             teation21.style.display= 'none';
             butomzd1.style.display= 'none';
             butomzd2.style.display= 'none';
+            Lifting.style.display = 'none';
+            alnatL12.style.display = 'none';
+            but511.style.display = 'none';
         }
 
 
@@ -124,6 +153,9 @@ let butomzd3 =document.getElementById('butomzd3');
                 mn1n1m1.style.display = 'none';
                 butomzd1.style.display= 'none';
                 butomzd2.style.display= 'none';
+                Lifting.style.display = 'none';
+                alnatL12.style.display = 'none';
+                but511.style.display = 'none';
 
         }
 
@@ -143,6 +175,9 @@ let butomzd3 =document.getElementById('butomzd3');
                 mn1n1m1.style.display = 'none';
                 butomzd1.style.display= 'none';
                 butomzd2.style.display= 'none';
+                Lifting.style.display = 'none';
+                alnatL12.style.display = 'none';
+                but511.style.display = 'none';
         }
 
 
@@ -182,6 +217,9 @@ let butomzd3 =document.getElementById('butomzd3');
         H11.value = '';
         alnatL11.style.display = 'none';
         alnatL21.style.display = 'none';
+        Lifting.style.display = 'none';
+        alnatL12.style.display = 'none';
+        but511.style.display = 'none';
 
     }
 
@@ -195,6 +233,9 @@ let butomzd3 =document.getElementById('butomzd3');
         mn1n1m1.style.display = 'none';
         butomzd1.style.display= 'none';
         butomzd2.style.display= 'none';
+        Lifting.style.display = 'none';
+        alnatL12.style.display = 'none';
+        but511.style.display = 'none';
 
     }
 
@@ -208,7 +249,10 @@ let butomzd3 =document.getElementById('butomzd3');
         poweraaa.style.display = 'none';
         div1.style.display = 'none';
         mn1n1m1.style.display = 'none';
+        Lifting.style.display = 'none';
+        alnatL12.style.display = 'none';
         butomzd1.style.display = 'block';
+        but511.style.display = 'none';
     }
     butomz2.onclick = function(){
         teation21.style.display = 'none';
@@ -219,6 +263,9 @@ let butomzd3 =document.getElementById('butomzd3');
         div1.style.display = 'none';
         mn1n1m1.style.display = 'none';
         butomzd1.style.display = 'none';
+        Lifting.style.display = 'none';
+        alnatL12.style.display = 'none';
+        but511.style.display = 'none';
         butomzd2.style.display = 'block';
     }
 
@@ -233,3 +280,62 @@ prcentcreansbut.onclick = function(){
         b44.style.background = 'red';
     }
 }
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+but411.onclick = function(){
+    if(Weight.value !=''){
+        let d = Weight.value  * Contingency.value ;
+        let e = +d + +Total.value / 1000 + +Block.value /1000 ;
+        let w = e * Dynamic.value ;
+        let uf = +w / +Rated.value * 100 ;
+        alnatL12.innerHTML ='1- CM & Manufacturer:'+ Crane.value + "<br>" 
+        + '2- Boom Length:'+ Boom.value +  "m" +"<br>" 
+        + '3- Counterweight:'+ Counterweight.value + 'Ton'+ "<br>" 
+        + '4- Maximum Capacity(SWL):'+ Maximum.value + 'Ton'+ "<br>" 
+        + '5- Outriggers:'+ Outriggers.value + '%'+ "<br>" 
+        + '6- Radius:'+ Radius.value + 'm'+ "<br>" 
+        + '7- SLW(d=aXCF) ='+ d.toFixed(2) + "<br>" 
+        + '8- Tlw(e=d+c+b)='+ e.toFixed(2) + "<br>" 
+        + '9- CW(w=e*DAF)='+ w.toFixed(2) +  "<br>" 
+        + '10- UF(UF=w/RC)='+ uf.toFixed(2)  + '%' ;
+        Lifting.style.display = 'none';
+        but511.style.display = 'block';
+        alnatL12.style.display = 'block';
+    }
+}
+
+
+
+but511.onclick = function(){
+    Lifting.style.display = 'block';
+    alnatL12.style.display = 'none';
+    but511.style.display = 'none';
+    
+}
+
+
+
+butomz4.onclick = function(){
+    Lifting.style.display = 'block';
+        teation21.style.display = 'none';
+        poweraa.style.display = 'none';
+        img.style.display = 'none';
+        pppp.style.display = 'none';
+        poweraaa.style.display = 'none';
+        div1.style.display = 'none';
+        mn1n1m1.style.display = 'none';
+        butomzd1.style.display = 'none';
+        butomzd2.style.display = 'none';
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
