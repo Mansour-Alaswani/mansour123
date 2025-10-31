@@ -307,17 +307,18 @@ input{
     position:relative;
     top: -50px;
 }
-h2{
+/* h2{
     position: relative;
     top: -55px;
-}
+    text-align: center;
+} */
 .mn1n1m1{
     background: #51515129;
     text-align: center;
     margin-top: 535px;
     margin-bottom: 130px;
     border-radius: 100px;
-    box-shadow: 5px 5px 10px 2px;        
+    box-shadow: 8px 0px 22px 8px;        
 }
 
 .butomz{
@@ -327,9 +328,17 @@ h2{
     border-radius: 100px;
     margin: 5px;
     color: black;
-    box-shadow: 10px 1px 1px 1px;
+    box-shadow: 3px 2px 10px 1px;
 }
-
+.butomz:hover{
+    background: #02a73c;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    margin: 5px;
+    color: black;
+    box-shadow: 3px 2px 10px 1px;
+}
 .butomzd1{
     display: none;
     text-align: center;
@@ -351,3 +360,51 @@ Embed{
     height: 200px;
 }
 
+.Lifting{
+    display: none;
+    text-align: center;
+}
+
+
+#Lifting input{
+    width: 80%;
+    top: -30px;
+    border-radius: 8px;
+    margin: 4px;
+    text-align: center;
+}
+
+
+#Lifting h2{
+    padding: 1px;
+    background: darkorange;
+    top: 0px;
+    margin: 13px;
+    border-radius: 60px;
+}
+
+#but511{
+    display: none;
+    position: absolute;
+    top: 10px;
+}
+
+
+#butomz4, #but511, #but411{
+    background-image: linear-gradient( to left, #ff9900, cyan );
+    border: #000000 3px solid;
+    box-shadow: rgb(0, 0, 0) 10px 10px 20px 3px;
+    color: #000000;
+}
+
+
+#but411{
+        position: relative;
+    top: -30px; 
+}
+
+
+.h12{
+    position: relative;
+    top: -30px;
+}
