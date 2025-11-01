@@ -6,6 +6,11 @@
     <title>HSE.Mansour</title>
     <link rel="stylesheet" href="css.css">
     <link rel="icon" href="hse-icon-with-a-shield-vector.jpg">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <!-- السورة في الامام -->
@@ -204,24 +209,31 @@
     </div>
     
     <button id="but511">تعديل</button>
+    <button id="download">تحميل</button>
+
+<script>
+        document.getElementById('download').addEventListener('click', function() {
+            // 1. تحديد العنصر المراد تحويله
+            const element = document.getElementById('alnatL12');
+
+            // 2. إعداد خيارات التحويل (اختياري)
+            const options = {
+                margin: 10,
+                filename: 'Lifting-Plan.Mansour.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // 3. بدء عملية التحويل والحفظ
+            html2pdf()
+                .set(options)
+                .from(element)
+                .save();
+        });
+</script>
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -241,21 +253,6 @@
 </div>
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
