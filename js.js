@@ -17,6 +17,7 @@ let N = document.getElementById('N');
 let Len = document.getElementById('Len');
 let H = document.getElementById('H');
 let but3 = document.getElementById('but3');
+//////////////////////////////////////////////////////////////////////////
 let Lifting = document.getElementById('Lifting');
 let h12 = document.getElementById('h12');
 let alnatL12 = document.getElementById('alnatL12');
@@ -39,7 +40,10 @@ let Radius = document.getElementById('Radius');
 let butomz4 = document.getElementById('butomz4');
 let but511 = document.getElementById('but511');
 let but411 = document.getElementById('but411');
+let download = document.getElementById('download');
 //////////////////////////////////////////////////////////////////////////
+
+// -------------------------------------------------------------------------
 
 let mn1n1m1 = document.getElementById('mn1n1m1');
 let butomzd1 =document.getElementById('butomzd1');
@@ -99,6 +103,7 @@ let butomzd3 =document.getElementById('butomzd3');
             Lifting.style.display = 'none';
             alnatL12.style.display = 'none';
             but511.style.display = 'none';
+            download.style.display = 'none';
             
         }
 
@@ -118,6 +123,7 @@ let butomzd3 =document.getElementById('butomzd3');
             Lifting.style.display = 'none';
             alnatL12.style.display = 'none';
             but511.style.display = 'none';
+            download.style.display = 'none';
         }
 
 
@@ -153,6 +159,7 @@ let butomzd3 =document.getElementById('butomzd3');
                 Lifting.style.display = 'none';
                 alnatL12.style.display = 'none';
                 but511.style.display = 'none';
+                download.style.display = 'none';
 
         }
 
@@ -175,6 +182,7 @@ let butomzd3 =document.getElementById('butomzd3');
                 Lifting.style.display = 'none';
                 alnatL12.style.display = 'none';
                 but511.style.display = 'none';
+                download.style.display = 'none';
         }
 
 
@@ -233,6 +241,7 @@ let butomzd3 =document.getElementById('butomzd3');
         Lifting.style.display = 'none';
         alnatL12.style.display = 'none';
         but511.style.display = 'none';
+        download.style.display = 'none';
 
     }
 
@@ -250,6 +259,7 @@ let butomzd3 =document.getElementById('butomzd3');
         alnatL12.style.display = 'none';
         butomzd1.style.display = 'block';
         but511.style.display = 'none';
+        download.style.display = 'none';
     }
     butomz2.onclick = function(){
         teation21.style.display = 'none';
@@ -263,6 +273,7 @@ let butomzd3 =document.getElementById('butomzd3');
         Lifting.style.display = 'none';
         alnatL12.style.display = 'none';
         but511.style.display = 'none';
+        download.style.display = 'none';
         butomzd2.style.display = 'block';
     }
 
@@ -305,6 +316,7 @@ but411.onclick = function(){
         + '10- UF(UF=w/RC)='+ uf.toFixed(2)  + '%' ;
         Lifting.style.display = 'none';
         but511.style.display = 'block';
+        download.style.display = 'block';
         alnatL12.style.display = 'block';
     }
 }
@@ -315,6 +327,7 @@ but511.onclick = function(){
     Lifting.style.display = 'block';
     alnatL12.style.display = 'none';
     but511.style.display = 'none';
+    download.style.display = 'none';
     
 }
 
@@ -336,4 +349,3 @@ butomz4.onclick = function(){
 
 
 ////////////////////////////////////////////////////////////////////////////////////
-
