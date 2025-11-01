@@ -292,25 +292,25 @@ but411.onclick = function(){
         let vetha1 = Math.acos(Radius.value / Boom.value) * (180 / Math.PI) ;
         alnatL12.innerHTML = "* Lifting Plan: " + "<br>" + "<br>" 
         + '1- Crane Model & Manufacturer : '+ Crane.value + "<br>" 
-        + '5- Maximum Capacity(SWL): '+ Maximum.value + ' Ton' + "<br>" 
-        + '2- Block Weight(Kg)--(b)  : ' + Block.value + " Kg" + "<br>" 
-        + '3- Boom Length : '+ Boom.value +  " m" +"<br>" 
-        + '7- Radius : '+ Radius.value + ' m'+ "<br>" 
-        + '4- Counterweight : '+ Counterweight.value + ' Ton'+ "<br>" 
-        + '6- Outriggers : '+ Outriggers.value + ' %'+ "<br>" 
+        + '2- Maximum Capacity(SWL): '+ Maximum.value + ' Ton' + "<br>" 
+        + '3- Block Weight(Kg)--(b)  : ' + Block.value + " Kg" + "<br>" 
+        + '4- Boom Length : '+ Boom.value +  " m" +"<br>" 
+        + '5- Radius : '+ Radius.value + ' m'+ "<br>" 
+        + '6- Counterweight : '+ Counterweight.value + ' Ton'+ "<br>" 
+        + '7- Outriggers : '+ Outriggers.value + ' %'+ "<br>" 
         + '8- Rated Capacity--(RC) : '+ Rated.value + ' Ton'+ "<br>" 
         + '9- Total Weight of Gears(Kg)--(c) : '+ Total.value + ' Kg'+ "<br>" 
-        + '9- Load Weight(a) : '+ Weight.value + ' Ton'+ "<br>" 
-        + '9- Contingency Factor (CF) : '+ Contingency.value  +  "<br>" 
-        + '10- Safe Load Weight (d)(d=aXCF) = '+ d.toFixed(2) + "<br>" 
-        + '11- Total lifted weight(e)(e=d+c+b) = '+ e.toFixed(2) + "<br>" 
-        + '13- Dynamic Amplification Factor(DAF) = '+ Dynamic.value +  "<br>" 
-        + '12- Calculation Weight(w)(w=e*DAF) = '+ w.toFixed(2) +  "<br>" 
-        + '14- Utilization Factor(UF)(UF=w/RC) = '+ uf.toFixed(2)  + ' %' + "<br>" 
+        + '10- Load Weight(a) : '+ Weight.value + ' Ton'+ "<br>" 
+        + '11- Contingency Factor (CF) : '+ Contingency.value  +  "<br>" 
+        + '12- Safe Load Weight (d)(d=aXCF) = '+ d.toFixed(2) + "<br>" 
+        + '13- Total lifted weight(e)(e=d+c+b) = '+ e.toFixed(2) + "<br>" 
+        + '14- Dynamic Amplification Factor(DAF) = '+ Dynamic.value +  "<br>" 
+        + '15- Calculation Weight(w)(w=e*DAF) = '+ w.toFixed(2) +  "<br>" 
+        + '16- Utilization Factor(UF)(UF=w/RC) = '+ uf.toFixed(2)  + ' %' + "<br>" 
         + '------------------------------------------------' + "<br>" 
         + "* Angles : " + "<br>" + "<br>" 
-        + "Height = " + vetha + " m" + "<br>"
-        + "Angle Boom = " + vetha1.toFixed(1) + ' ْ' ;
+        + "17- Height = " + vetha + " m" + "<br>"
+        + "18- Angle Boom = " + vetha1.toFixed(1) + ' ْ' ;
         Lifting.style.display = 'none';
         but511.style.display = 'block';
         download.style.display = 'block';
@@ -338,3 +338,4 @@ butomz4.onclick = function(){
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
+
