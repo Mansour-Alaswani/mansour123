@@ -306,11 +306,11 @@ input{
     position:relative;
     top: -50px;
 }
-h2{
+/* h2{
     position: relative;
     top: -55px;
     text-align: center;
-} 
+} */
 .mn1n1m1{
     background: #51515129;
     text-align: center;
@@ -388,6 +388,13 @@ Embed{
     top: 10px;
 }
 
+#download{
+    position: absolute;
+    bottom: 100px;
+    background-image: linear-gradient( to left, #b7ff00, rgb(98, 255, 0) );
+    display: none;
+
+}
 
 #butomz4, #but511, #but411{
     background-image: linear-gradient( to left, #ff9900, cyan );
@@ -398,7 +405,7 @@ Embed{
 
 
 #but411{
-        position: relative;
+    position: relative;
     top: -30px; 
 }
 
@@ -407,5 +414,3 @@ Embed{
     position: relative;
     top: -30px;
 }
-
-
