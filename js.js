@@ -42,15 +42,11 @@ let but511 = document.getElementById('but511');
 let but411 = document.getElementById('but411');
 let download = document.getElementById('download');
 //////////////////////////////////////////////////////////////////////////
-
 // -------------------------------------------------------------------------
-
 let mn1n1m1 = document.getElementById('mn1n1m1');
 let butomzd1 =document.getElementById('butomzd1');
 let butomzd2 =document.getElementById('butomzd2');
 let butomzd3 =document.getElementById('butomzd3');
-
-
 //--------------------------------------------------------------------------
     let b44 = document.getElementById('b44');
     let prcentcreans = document.getElementById('prcentcreans');
@@ -106,10 +102,7 @@ let butomzd3 =document.getElementById('butomzd3');
             download.style.display = 'none';
             
         }
-
 /////////////////////////////////////////////معادلة حمولة الواير/////////////////////////////////////////////
-
-
         home.onclick = function(){
             mn1n1m1.style.display= 'block';
             poweraa.style.display= 'none';
@@ -288,32 +281,28 @@ prcentcreansbut.onclick = function(){
         b44.style.background = 'red';
     }
 }
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
 but411.onclick = function(){
     if(Weight.value !=''){
         let d = Weight.value  * Contingency.value ;
         let e = +d + +Total.value / 1000 + +Block.value /1000 ;
         let w = e * Dynamic.value ;
         let uf = +w / +Rated.value * 100 ;
-        alnatL12.innerHTML ='1- CM & Manufacturer:'+ Crane.value + "<br>" 
-        + '2- Boom Length:'+ Boom.value +  "m" +"<br>" 
-        + '3- Counterweight:'+ Counterweight.value + 'Ton'+ "<br>" 
-        + '4- Maximum Capacity(SWL):'+ Maximum.value + 'Ton'+ "<br>" 
-        + '5- Outriggers:'+ Outriggers.value + '%'+ "<br>" 
-        + '6- Radius:'+ Radius.value + 'm'+ "<br>" 
-        + '7- SLW(d=aXCF) ='+ d.toFixed(2) + "<br>" 
-        + '8- Tlw(e=d+c+b)='+ e.toFixed(2) + "<br>" 
-        + '9- CW(w=e*DAF)='+ w.toFixed(2) +  "<br>" 
-        + '10- UF(UF=w/RC)='+ uf.toFixed(2)  + '%' ;
+        let vetha = Radius.value - Boom.value; 
+        alnatL12.innerHTML = "* Lifting Plan: " + "<br>" + "<br>" 
+        + '1- CM & Manufacturer: '+ Crane.value + "<br>" 
+        + '2- Boom Length: '+ Boom.value +  "m" +"<br>" 
+        + '3- Counterweight: '+ Counterweight.value + 'Ton'+ "<br>" 
+        + '4- Maximum Capacity(SWL): '+ Maximum.value + 'Ton'+ "<br>" 
+        + '5- Outriggers: '+ Outriggers.value + '%'+ "<br>" 
+        + '6- Radius: '+ Radius.value + 'm'+ "<br>" 
+        + '7- SLW(d=aXCF) = '+ d.toFixed(2) + "<br>" 
+        + '8- Tlw(e=d+c+b) = '+ e.toFixed(2) + "<br>" 
+        + '9- CW(w=e*DAF) = '+ w.toFixed(2) +  "<br>" 
+        + '10- (DAF) = '+ Dynamic.value +  "<br>" 
+        + '11- UF(UF=w/RC) = '+ uf.toFixed(2)  + '%' + "<br>" 
+        + '------------------------------------------------ ' + "<br>" 
+        + "* Tention: " ;
         Lifting.style.display = 'none';
         but511.style.display = 'block';
         download.style.display = 'block';
@@ -321,18 +310,12 @@ but411.onclick = function(){
     }
 }
 
-
-
 but511.onclick = function(){
     Lifting.style.display = 'block';
     alnatL12.style.display = 'none';
     but511.style.display = 'none';
-    download.style.display = 'none';
-    
+    download.style.display = 'none';    
 }
-
-
-
 butomz4.onclick = function(){
     Lifting.style.display = 'block';
         teation21.style.display = 'none';
