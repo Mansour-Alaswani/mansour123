@@ -283,12 +283,13 @@ prcentcreansbut.onclick = function(){
 }
 ////////////////////////////////////////////////////////////////////////////////////
 but411.onclick = function(){
-    if(Weight.value !=''){
+    if(Weight.value && Boom.value && Radius.value !=''){
         let d = Weight.value  * Contingency.value ;
         let e = +d + +Total.value / 1000 + +Block.value /1000 ;
         let w = e * Dynamic.value ;
         let uf = +w / +Rated.value * 100 ;
-        let vetha = Radius.value - Boom.value; 
+        let vetha = Math.sqrt(Math.pow(Boom.value,2) - Math.pow(Radius.value,2)).toFixed(2)  ; 
+        let vetha1 = Math.acos(Radius.value / Boom.value) * (180 / Math.PI) ;
         alnatL12.innerHTML = "* Lifting Plan: " + "<br>" + "<br>" 
         + '1- CM & Manufacturer: '+ Crane.value + "<br>" 
         + '2- Boom Length: '+ Boom.value +  "m" +"<br>" 
@@ -302,7 +303,9 @@ but411.onclick = function(){
         + '10- (DAF) = '+ Dynamic.value +  "<br>" 
         + '11- UF(UF=w/RC) = '+ uf.toFixed(2)  + '%' + "<br>" 
         + '------------------------------------------------ ' + "<br>" 
-        + "* Tention: " ;
+        + "* Tention: " + "<br>" + "<br>" 
+        + "Height = " + vetha + "<br>"
+        + "Angle = " + vetha1.toFixed(1) + ' ْ' ;
         Lifting.style.display = 'none';
         but511.style.display = 'block';
         download.style.display = 'block';
@@ -329,6 +332,5 @@ butomz4.onclick = function(){
         butomzd2.style.display = 'none';
 
 }
-
 
 ////////////////////////////////////////////////////////////////////////////////////
