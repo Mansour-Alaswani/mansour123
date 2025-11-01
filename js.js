@@ -305,7 +305,7 @@ but411.onclick = function(){
         + '------------------------------------------------ ' + "<br>" 
         + "* Tention: " + "<br>" + "<br>" 
         + "Height = " + vetha + "<br>"
-        + "Angle = " + vetha1.toFixed(1) + ' ْ' ;
+        + "Angle Boom = " + vetha1.toFixed(1) + ' ْ' ;
         Lifting.style.display = 'none';
         but511.style.display = 'block';
         download.style.display = 'block';
@@ -334,3 +334,4 @@ butomz4.onclick = function(){
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
+
