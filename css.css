@@ -390,20 +390,23 @@ Embed{
 
 #download{
     position: absolute;
-    bottom: 100px;
+    top: 80px;
     background-image: linear-gradient( to left, #b7ff00, rgb(98, 255, 0) );
     display: none;
-
 }
-
+#download:hover{
+    position: absolute;
+    top: 80px;
+    background-image: linear-gradient( to left, #689003, rgb(98, 255, 0) );
+    display: none;
+    padding: 18px;
+}
 #butomz4, #but511, #but411{
     background-image: linear-gradient( to left, #ff9900, cyan );
     border: #000000 3px solid;
     box-shadow: rgb(0, 0, 0) 10px 10px 20px 3px;
     color: #000000;
 }
-
-
 #but411{
     position: relative;
     top: -30px; 
@@ -413,4 +416,14 @@ Embed{
 .h12{
     position: relative;
     top: -30px;
+}
+#alnatL12{
+    background-image: linear-gradient(to left, #0f8bf1, #fffa00);
+    box-shadow: 1px 1px 20px 1px ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1px;
+    width: 95%;
+    text-align: left;
+    display: none;
 }
