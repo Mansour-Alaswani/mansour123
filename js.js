@@ -189,6 +189,7 @@ let butomzd3 =document.getElementById('butomzd3');
     let H11 = document.getElementById('H11');
     let but41 = document.getElementById('but41');
     let but51 = document.getElementById('but51');
+    
 
 
     but41.onclick = function(){
@@ -283,6 +284,8 @@ prcentcreansbut.onclick = function(){
 }
 ////////////////////////////////////////////////////////////////////////////////////
 but411.onclick = function(){
+
+  
     if(Weight.value && Boom.value && Radius.value !=''){
         let d = Weight.value  * Contingency.value ;
         let e = +d + +Total.value / 1000 + +Block.value /1000 ;
@@ -310,7 +313,8 @@ but411.onclick = function(){
         + '------------------------------------------------' + "<br>" 
         + "* Angles : " + "<br>" + "<br>" 
         + "17- Height = " + vetha + " m" + "<br>"
-        + "18- Angle Boom = " + vetha1.toFixed(1) + ' ْ' ;
+        + "18- Angle Boom = " + vetha1.toFixed(1) + ' ْ' + "<br>"
+        + "19- Crane Support  = " + (Math.sqrt( Maximum.value / 5) * 30.48).toFixed(2)  + "cm";
         Lifting.style.display = 'none';
         but511.style.display = 'block';
         download.style.display = 'block';
@@ -336,6 +340,4 @@ butomz4.onclick = function(){
         butomzd1.style.display = 'none';
         butomzd2.style.display = 'none';
 }
-
 ////////////////////////////////////////////////////////////////////////////////////
-
