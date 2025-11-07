@@ -85,7 +85,6 @@ let butomzd3 =document.getElementById('butomzd3');
             }
             
         }
-
         list.onclick = function(){
             poweraa.style.display = 'block';
             img.style.display = 'none';
@@ -100,7 +99,7 @@ let butomzd3 =document.getElementById('butomzd3');
             alnatL12.style.display = 'none';
             but511.style.display = 'none';
             download.style.display = 'none';
-            
+            c.style.display = 'none';      
         }
 /////////////////////////////////////////////معادلة حمولة الواير/////////////////////////////////////////////
         home.onclick = function(){
@@ -117,17 +116,14 @@ let butomzd3 =document.getElementById('butomzd3');
             alnatL12.style.display = 'none';
             but511.style.display = 'none';
             download.style.display = 'none';
+            c.style.display = 'none';
         }
-
-
         // عدد الكلبسات لربط الواير////////////////
-
         let poweraaa = document.getElementById('poweraaa');
         let b4 = document.getElementById('b4');
         let but1 = document.getElementById('but1');
         let in3 = document.getElementById('in3');
         let settings = document.getElementById('settings');
-
         but1.onclick = function(){
             let m = in3.value * 0.04;
             let mm = m * 4 +1;
@@ -136,9 +132,7 @@ let butomzd3 =document.getElementById('butomzd3');
                 b4.innerHTML = Math.ceil(mm);
                 b4.style.background = '#00FF7F';
             }
-
         }
-
             settings.onclick = function(){
                 poweraa.style.display = 'none';
                 img.style.display = 'none';
@@ -153,12 +147,9 @@ let butomzd3 =document.getElementById('butomzd3');
                 alnatL12.style.display = 'none';
                 but511.style.display = 'none';
                 download.style.display = 'none';
-
+                c.style.display = 'none';
         }
-
         // عدد الكلبسات لربط الواير////////////////
-
-
         let lista = document.getElementById('lista');
         let div1 = document.getElementById('div1');
 
@@ -176,9 +167,8 @@ let butomzd3 =document.getElementById('butomzd3');
                 alnatL12.style.display = 'none';
                 but511.style.display = 'none';
                 download.style.display = 'none';
+                c.style.display = 'none';
         }
-
-
     let alnatL11 = document.getElementById('alnatL11');
     let alnatL21 = document.getElementById('alnatL21');
     let W11 = document.getElementById('W11');
@@ -189,9 +179,6 @@ let butomzd3 =document.getElementById('butomzd3');
     let H11 = document.getElementById('H11');
     let but41 = document.getElementById('but41');
     let but51 = document.getElementById('but51');
-    
-
-
     but41.onclick = function(){
         if(W11.value && D11.value && D21.value && L11.value && L21.value && H11.value !=''){
                 let bast11 = W11.value * D21.value * L11.value ;
@@ -206,7 +193,6 @@ let butomzd3 =document.getElementById('butomzd3');
                 alnatL21.style.display = 'block';
         }
     }
-
     but51.onclick = function(){
         W11.value = '';
         D11.value = '';
@@ -219,9 +205,7 @@ let butomzd3 =document.getElementById('butomzd3');
         Lifting.style.display = 'none';
         alnatL12.style.display = 'none';
         but511.style.display = 'none';
-
     }
-
     none1111.onclick = function(){
         poweraa.style.display = 'none';
         img.style.display = 'none';
@@ -236,11 +220,9 @@ let butomzd3 =document.getElementById('butomzd3');
         alnatL12.style.display = 'none';
         but511.style.display = 'none';
         download.style.display = 'none';
-
+        c.style.display = 'none';
     }
-
 // ---------------------------------------------------------------------
-
     butomz1.onclick = function(){
         teation21.style.display = 'none';
         poweraa.style.display = 'none';
@@ -254,6 +236,7 @@ let butomzd3 =document.getElementById('butomzd3');
         butomzd1.style.display = 'block';
         but511.style.display = 'none';
         download.style.display = 'none';
+        c.style.display = 'none';
     }
     butomz2.onclick = function(){
         teation21.style.display = 'none';
@@ -269,8 +252,8 @@ let butomzd3 =document.getElementById('butomzd3');
         but511.style.display = 'none';
         download.style.display = 'none';
         butomzd2.style.display = 'block';
+        c.style.display = 'none';
     }
-
 //------------------------------------------------------------------------
 prcentcreansbut.onclick = function(){
     let yosaue = prcentcrean1.value / prcentcreans.value * 100 ;
@@ -285,7 +268,6 @@ prcentcreansbut.onclick = function(){
 ////////////////////////////////////////////////////////////////////////////////////
 but411.onclick = function(){
 
-  
     if(Weight.value && Boom.value && Radius.value !=''){
         let d = Weight.value  * Contingency.value ;
         let e = +d + +Total.value / 1000 + +Block.value /1000 ;
@@ -321,15 +303,15 @@ but411.onclick = function(){
         alnatL12.style.display = 'block';
     }
 }
-
 but511.onclick = function(){
     Lifting.style.display = 'block';
     alnatL12.style.display = 'none';
     but511.style.display = 'none';
-    download.style.display = 'none';    
+    download.style.display = 'none'; 
+    c.style.display = 'none';
 }
 butomz4.onclick = function(){
-    Lifting.style.display = 'block';
+        Lifting.style.display = 'block';
         teation21.style.display = 'none';
         poweraa.style.display = 'none';
         img.style.display = 'none';
@@ -339,5 +321,23 @@ butomz4.onclick = function(){
         mn1n1m1.style.display = 'none';
         butomzd1.style.display = 'none';
         butomzd2.style.display = 'none';
+        c.style.display = 'none';
 }
 ////////////////////////////////////////////////////////////////////////////////////
+let c = document.getElementById('c');
+let butomz3 = document.getElementById('butomz3');
+butomz3.onclick = function(){
+        Lifting.style.display = 'none';
+        teation21.style.display = 'none';
+        poweraa.style.display = 'none';
+        img.style.display = 'none';
+        pppp.style.display = 'none';
+        poweraaa.style.display = 'none';
+        div1.style.display = 'none';
+        mn1n1m1.style.display = 'none';
+        butomzd1.style.display = 'none';
+        butomzd2.style.display = 'none';
+        c.style.display = 'block';
+}
+
+
