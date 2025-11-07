@@ -52,18 +52,15 @@ let butomzd3 =document.getElementById('butomzd3');
     let prcentcreans = document.getElementById('prcentcreans');
     let prcentcrean1 = document.getElementById('prcentcrean1');
     let prcentcreansbut = document.getElementById('prcentcreansbut');
-
     but3.onclick = function(){
         if(W.value !=''){
             let teation1 = (W.value / N.value )*(  Len.value / H.value);
-
             t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
             t1.style.borderRadius = '12px';
             t1.style.padding = '10px';
             t1.style.background = '#00FF7F';
         }
     }
-
 ///////////////////////////////////////////معادلة حمولة الواير///////////////////////////////////////////////////
         but.onclick = function(){
             let mans = in1.value * 0.039 ;
@@ -82,8 +79,7 @@ let butomzd3 =document.getElementById('butomzd3');
                 a3.style.background = 'red';
                 b3.style.display = 'block';
                 b3.style.background = '#00FF7F';
-            }
-            
+            } 
         }
         list.onclick = function(){
             poweraa.style.display = 'block';
@@ -127,7 +123,6 @@ let butomzd3 =document.getElementById('butomzd3');
         but1.onclick = function(){
             let m = in3.value * 0.04;
             let mm = m * 4 +1;
-
             if( mm >= 1 && in3.value !=''){
                 b4.innerHTML = Math.ceil(mm);
                 b4.style.background = '#00FF7F';
@@ -152,7 +147,6 @@ let butomzd3 =document.getElementById('butomzd3');
         // عدد الكلبسات لربط الواير////////////////
         let lista = document.getElementById('lista');
         let div1 = document.getElementById('div1');
-
         lista.onclick = function(){
                 poweraa.style.display = 'none';
                 img.style.display = 'none';
@@ -339,5 +333,6 @@ butomz3.onclick = function(){
         butomzd2.style.display = 'none';
         c.style.display = 'block';
 }
+
 
 
