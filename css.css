@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root
 {
     --cle:#515151;
 }
+
 body
 {
     display: flex;
@@ -15,6 +17,7 @@ body
     min-height: 100vh;
     background: #3c9bdead;
 }
+
 .navigation{
     position: fixed;
     width: 400px;
@@ -26,10 +29,13 @@ body
     border-radius: 10px;
     bottom: 0px;
 }
+
 .navigation ul{
     display: flex;
     width: 350px;
 }
+
+
 .navigation ul li{
     position: relative;
     list-style: none;
@@ -38,6 +44,7 @@ body
     z-index: 1;
 
 }
+
 .navigation ul li a{
     position: relative;
     display: flex;
@@ -47,7 +54,9 @@ body
     width: 100%;
     text-align: center;
     font-weight: 500;
+
 }
+
 .navigation ul li a .icon{
     position: relative;
     display: block;
@@ -57,10 +66,12 @@ body
     transition: 0.5s;
     color: var(--cle);
 }
+
 .navigation ul li.active a .icon
 {
     transform: translateY(-32px);
 }
+
 .navigation ul li a .text{
     position: absolute;
     color: var(--cle);
@@ -112,6 +123,8 @@ body
     border-top-left-radius:20px ;
     box-shadow: 0px -0px 0 0 #23c2f1;
 }
+
+
 .navigation ul li:nth-child(1).active ~ .indicator
 {
     transform: translateX(calc(70px * 0));
@@ -132,6 +145,7 @@ body
 {
     transform: translateX(calc(70px * 4));
 }
+
 .poweraa{
     width: 80%;
     height: 150px;
@@ -140,6 +154,7 @@ body
     position: absolute;
     top: 150px;   
 }
+
 .poweraa input{
     margin: 10px;
     padding: 9px;
@@ -150,6 +165,7 @@ body
     position: relative;
     top: -71px;
 }
+
 .poweraa input:hover{
     margin: 10px;
     padding: 10px;
@@ -171,10 +187,12 @@ body
     position: relative;
     top: -65px;
 }
+
 .but:hover{
     padding: 20px;
     transition: .3s;
 }
+
 .lod3{
     border-radius: 22px;
     font-size: 20px;
@@ -183,9 +201,11 @@ body
     position: relative;
     top: -72px;
 }
+
 .poweraa, .poweraaa{
     display: none;
 }
+
 .img{
     position: absolute;
     width: 300px;
@@ -193,9 +213,11 @@ body
     top: 50px;
     box-shadow: 1px 1px 54px 14px #ffffff;
 }
+
 .hh1{
     background: rgb(164, 164, 164);
 }
+
 p{
     position: absolute;
     top: 400px;
@@ -205,6 +227,7 @@ p{
     border-radius: 10px;
     padding: 10px;
 }
+
 .h11{
     text-align: center;
     color: #fff;
@@ -220,23 +243,26 @@ p{
     position: relative;
     top: -55px;
 }
+
 .div1{
     display: none;
     text-align: center;
 }
+
 .input2{
     text-align: center;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
 }
-       
+        
 .teation21{
     text-align: center;
     display: b;
     padding: 25px;
     display: none;
 }
+
 .teation21 input{
     text-align: center;
     padding: 5px;
@@ -244,6 +270,7 @@ p{
     border-radius: 20px;  
     box-shadow: 1px 1px 10px ;
 }
+
 .buta7ceb1{
     display: flex;
     text-align: center;
@@ -251,6 +278,7 @@ p{
     position: relative;
     top: -50px;
 }
+
 button{
     text-align: center;
     margin: 15px;
@@ -261,6 +289,7 @@ button{
     font-style: italic; 
 }
 #alnatL21{
+
     border-radius: 20px;
     position: relative;
     padding: 5px;
@@ -269,6 +298,7 @@ button{
     display: none;
     box-shadow: 5px 5px 14px 3px;
     top: -61px;
+
 }
 #alnatL11{
 border-radius: 20px;
@@ -290,6 +320,11 @@ input{
     position:relative;
     top: -50px;
 }
+/* h2{
+    position: relative;
+    top: -55px;
+    text-align: center;
+} */
 .mn1n1m1{
     background: #51515129;
     text-align: center;
@@ -298,6 +333,7 @@ input{
     border-radius: 100px;
     box-shadow: 8px 0px 22px 8px;        
 }
+
 .butomz{
     background: #2ceb06ed;
     width: 120px;
@@ -322,6 +358,7 @@ input{
     margin-bottom: 110px;
     width: 90%;
 }
+
 div button h1{
     font-size: 150%;
 }
@@ -335,10 +372,13 @@ Embed{
     width: 100%;
     height: 200px;
 }
+
 .Lifting{
     display: none;
     text-align: center;
 }
+
+
 #Lifting input{
     width: 80%;
     top: -30px;
@@ -346,6 +386,8 @@ Embed{
     margin: 4px;
     text-align: center;
 }
+
+
 #Lifting h2{
     padding: 1px;
     background: darkorange;
@@ -359,6 +401,7 @@ Embed{
     position: absolute;
     top: 10px;
 }
+
 #download{
 font-size: 0px;
     border-radius: 100px;
@@ -387,6 +430,8 @@ font-size: 0px;
     position: relative;
     top: -30px; 
 }
+
+
 .h12{
     position: relative;
     top: -30px;
@@ -403,4 +448,68 @@ background-image: linear-gradient(to left, #0f8bf1, #fffa00);
     font-size: 15px;
     font-family: monospace;
 }
+#tandamLifteng{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 330px;  
+}
+#tandamLifteng input{
+    width: 80%;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+#almans{
+    display: none;
+    background: #1cae05;
+    border-radius: 20px;
+    position: absolute;
+    top: 25px;
+    padding: 20px;
+    font-size: 13px;
+    width: 90%;
+}
+ #tandamLifteng button{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px 3px;
+    font-size: 15px;
+    font-style: italic;
+    position: relative;
+    top: -49px;
+}
 
+.c{
+    display: none;
+}
+
+        body { font-family: 'Arial', sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .c { max-width: 900px; margin: auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .is {     display: grid
+;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding-top: 75px; }
+        .ig label {     display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    top: -49px; }
+        .ig input { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        #b { width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
+        #b:hover { background-color: #0056b3; }
+        #rc { margin-bottom: 100px; margin-top: 30px; padding: 15px; background-color: #e6f7ff; border: 1px solid #b3e3ff; border-radius: 5px; overflow-x: auto; }
+        #rc h3 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; text-align: center; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px 5px; }
+        th { background-color: #007bff; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
