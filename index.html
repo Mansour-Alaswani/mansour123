@@ -213,10 +213,114 @@ download
     <button class="butomz" id="butomz4"><h1>Lifting</h1></button>
     <button class="butomz" id="butomz1"><h1>الاكواد</h1></button>
     <button class="butomz" id="butomz2"><h1>LEL,UEL</h1></button>
-    <button class="butomz" id="butomz3"><h1>سقالات</h1></button>
+    <button class="butomz" id="butomz3"><h1>Pa,Pb</h1></button>
     <button class="butomz" id="butomz5"><h1>الاماكن المغقة</h1></button>
 </div>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <div class="c" id="c">
+        <h2>حسابات الرفع الترادفي (Tandem Lift)</h2>
+        
+        <div class="is">
+            <div class="ig">
+                <label for="w">الوزن الإجمالي (WLodTL) (طن):</label>
+                <input type="number" id="w" placeholder="مثال: 100">
+            </div>
+            
+            <div class="ig">
+                <label for="d1">المسافة D1 (متر):</label>
+                <input type="number" id="d1" placeholder="مثال: 3">
+            </div>
+
+            <div class="ig">
+                <label for="d2">المسافة D2 (متر):</label>
+                <input type="number" id="d2" placeholder="مثال: 2">
+            </div>
+
+            <div class="ig">
+                <label for="d3">المسافة D3 (متر):</label>
+                <input type="number" id="d3" placeholder="مثال: 1">
+            </div>
+        </div>
+        
+        <button id="b">احسب جدول الزوايا (0° - 90°)</button>
+
+        <div id="rc" style="display:none;">
+            <h3>نتائج الحسابات لكل زاوية</h3>
+            <div id="res"></div>
+        </div>
+    </div>
+
+    <script>
+        // اختصار الدالة
+        function degToRad(d) {
+            return d * (Math.PI / 180);
+        }
+
+        // اختصار الدالة الرئيسية
+        function calcTandem() {
+            // 1. الحصول على العناصر المدخلة عبر IDs الجديدة
+            const wEl = document.getElementById('w');
+            const d1El = document.getElementById('d1');
+            const d2El = document.getElementById('d2');
+            const d3El = document.getElementById('d3');
+            const resDiv = document.getElementById('res');
+            const resCont = document.getElementById('rc');
+
+            // 2. التحقق من المدخلات
+            if (!wEl.value || !d1El.value || !d2El.value || !d3El.value) {
+                alert("يرجى إدخال جميع قيم الوزن والمسافات.");
+                resDiv.innerHTML = '';
+                resCont.style.display = 'none';
+                return;
+            }
+
+            // 3. تحويل المدخلات إلى أرقام
+            const WLodTL = +wEl.value; 
+            const D1 = +d1El.value;
+            const D2 = +d2El.value;
+            const D3 = +d3El.value;
+            
+            // 4. بناء رأس الجدول
+            let tHTML = '<table><thead><tr><th>الزاوية (°)</th><th>Pa (طن)</th><th>Pb (طن)</th><th>Da (متر)</th><th>Db (متر)</th></tr></thead><tbody>';
+
+            // 5. حلقة التكرار لجميع الزوايا من 0 إلى 90 (بخطوة 5)
+            for (let deg = 0; deg <= 90; deg += 5) {
+                const rad = degToRad(deg);
+                
+                const cos = Math.cos(rad);
+                const sin = Math.sin(rad);
+
+                // حساب Da و Db
+                const Da = (D1 * cos) + (D3 * sin);
+                const Db = D2 * cos;
+                const DL = Da + Db ; // مجموع الأذرع
+
+                // حساب Pa و Pb
+                const Pa = WLodTL * (Da / DL); 
+                const Pb = WLodTL * (Db / DL); 
+
+                // إضافة صف جديد للجدول
+                tHTML += '<tr>';
+                tHTML += '<td>' + deg + '</td>';
+                tHTML += '<td>' + Pa.toFixed(2) + '</td>';
+                tHTML += '<td>' + Pb.toFixed(2) + '</td>';
+                tHTML += '<td>' + Da.toFixed(2) + '</td>';
+                tHTML += '<td>' + Db.toFixed(2) + '</td>';
+                tHTML += '</tr>';
+            }
+
+            // 6. إغلاق الجدول وعرض النتائج
+            tHTML += '</tbody></table>';
+            resDiv.innerHTML = tHTML;
+            resCont.style.display = 'block';
+        }
+
+        // ربط دالة الحساب بالزر عند النقر (باستخدام ID الجديد 'b')
+        document.getElementById('b').onclick = calcTandem;
+    </script>
 <script type="module" src="js.js"></script>
 </body>
 </html>
