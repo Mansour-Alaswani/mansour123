@@ -1,338 +1,326 @@
-let but = document.getElementById('but');
-let in1 = document.getElementById('in1');
-let in2 = document.getElementById('in2');
-let b3 = document.getElementById('b3');
-let a3 = document.getElementById('a3');
-let list = document.getElementById('list');
-let poweraa = document.getElementById('poweraa');
-let home = document.getElementById('home');
-let img = document.getElementById('img');
-let pppp = document.getElementById('pppp');
-let teation21 = document.getElementById('teation21');
-let none1111 = document.getElementById('none1111');
-let t1 = document.getElementById('t1');
-let t2 = document.getElementById('t2');
-let W = document.getElementById('W');
-let N = document.getElementById('N');
-let Len = document.getElementById('Len');
-let H = document.getElementById('H');
-let but3 = document.getElementById('but3');
-//////////////////////////////////////////////////////////////////////////
-let Lifting = document.getElementById('Lifting');
-let h12 = document.getElementById('h12');
-let alnatL12 = document.getElementById('alnatL12');
-let Crane = document.getElementById('Crane');
-let Maximum = document.getElementById('Maximum');
-let Block = document.getElementById('Block');
-let Outriggers = document.getElementById('Outriggers');
-let Total = document.getElementById('Total');
-let Weight = document.getElementById('Weight');
-let Contingency = document.getElementById('Contingency');
-let Safe = document.getElementById('Safe');
-let Totallifted = document.getElementById('Totallifted');
-let Dynamic = document.getElementById('Dynamic');
-let Calculation = document.getElementById('Calculation');
-let Utilization = document.getElementById('Utilization');
-let Rated = document.getElementById('Rated');
-let Counterweight = document.getElementById('Counterweight');
-let Boom = document.getElementById('Boom');
-let Radius = document.getElementById('Radius');
-let butomz4 = document.getElementById('butomz4');
-let but511 = document.getElementById('but511');
-let but411 = document.getElementById('but411');
-let download = document.getElementById('download');
-//////////////////////////////////////////////////////////////////////////
-// -------------------------------------------------------------------------
-let mn1n1m1 = document.getElementById('mn1n1m1');
-let butomzd1 =document.getElementById('butomzd1');
-let butomzd2 =document.getElementById('butomzd2');
-let butomzd3 =document.getElementById('butomzd3');
-//--------------------------------------------------------------------------
-    let b44 = document.getElementById('b44');
-    let prcentcreans = document.getElementById('prcentcreans');
-    let prcentcrean1 = document.getElementById('prcentcrean1');
-    let prcentcreansbut = document.getElementById('prcentcreansbut');
-    but3.onclick = function(){
-        if(W.value !=''){
-            let teation1 = (W.value / N.value )*(  Len.value / H.value);
-            t1.innerHTML =  teation1.toFixed(2) + ' >> Ton';
-            t1.style.borderRadius = '12px';
-            t1.style.padding = '10px';
-            t1.style.background = '#00FF7F';
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE.Mansour</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="hse-icon-with-a-shield-vector.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=download" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- السورة في الامام -->
+        <img class="img" src="IMG_٢٠٢٥١٠٠٣_١٩٥٢٣٧.jpg" id="img"> 
+        <br>
+        <p id="pppp">HSE.Mansour Mohamed<br> 01067393986</p>
+        <br>
+    <!-- السورة في الامام -->
+    <!-- قدرة الوايرات -->
+    <div class="poweraa" id="poweraa">
+        <h1 class="h11">قدرة الوايرات</h1>
+        <h1 class="lod3" id="b3"></h1>
+        <h1 class="lod3" id="a3"></h1>
+        <input id="in1" type="number" placeholder="ادخل قطر الواير بالملي">
+        <input id="in2" type="number" placeholder="ادخل معامل الكسر (42,45)">
+        <br>
+        <button  class="but" id="but">اضغط</button>
+
+    </div>
+        <!-- قدرة الوايرات -->
+        <!-- عدد الكلبسات -->
+    <div class="poweraa" id="poweraaa">
+        <h1 class="h11">عدد الكلبسات</h1>
+        <h1 class="lod3" id="b4"></h1>
+        <input id="in3" type="number" placeholder="ادخل قطر الواير بالملي">
+        <br>
+        <button  class="but" id="but1">اضغط</button>
+        <h1 class="h11">النسبة المأوية</h1>
+        <h1 class="lod3" id="b44"></h1>
+        <input id="prcentcreans" type="number" placeholder="قدرة الونش في هذا الوضع">
+        <input id="prcentcrean1" type="number" placeholder="وزن الطرد">
+        <br>
+        <button  class="but" id="prcentcreansbut">اضغط</button>
+    </div>
+        <!-- عدد الكلبسات -->
+<!-- //////////////////////////////////////////////////navigation////////////////////////////////////////////////// -->
+    <div class="navigation">
+        <ul>
+
+            <li class="list">
+                <a href="#" id="lista" >
+                    <span class="icon">
+                    <img src="crane.png" alt="" width="25px">
+
+                    </span>
+                    <span class="text">calculat COG</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="#" id="settings">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <span class="text">Klips</span>
+                </a>
+            </li>
+                        <li class="list active">
+                <a href="#" id="home">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" id="none1111">
+                    <span class="icon">
+                        <ion-icon name="calculator-outline"></ion-icon>
+                    </span>
+                    <span class="text">Changing COG</span>
+                </a>
+            </li>
+                <li class="list">
+                <a href="#" id="list">
+                    <span class="icon">
+                        <img src="wire.png" alt="" width="25px">
+                    </span>
+                    <span class="text">SWL</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink(){
+            list.forEach((item)=>
+            item.classList.remove('active'));
+            this.classList.add('active');
         }
-    }
-///////////////////////////////////////////معادلة حمولة الواير///////////////////////////////////////////////////
-        but.onclick = function(){
-            let mans = in1.value * 0.039 ;
-            let man = in2.value ;
-            if(man == 45){
-                b3.innerHTML = 'Safe Working Load '  + "<br>" + 'حد التشغيل الامن'+"<br>" +( Math.pow(mans,2) * 45 / 5).toFixed(2) + ' Ton';
-                a3.innerHTML = 'Ultimate Load'  +"<br>"+ 'حد الانهيار'+"<br>" + (Math.pow(mans,2) * 45).toFixed(2)  + ' Ton';
-                a3.style.display = 'block';
-                a3.style.background = 'red';
-                b3.style.display = 'block';
-                b3.style.background = '#00FF7F';
-            }else if(man == 42){
-                a3.innerHTML = 'Ultimate Load'  +"<br>" + 'حد الانهيار'+"<br>" +( Math.pow(mans,2) * 42).toFixed(2)  + ' Ton';
-                b3.innerHTML = 'Safe Working Load '  +"<br>" + 'حد التشغيل الامن'+"<br>" +( Math.pow(mans,2) * 42 / 5).toFixed(2) + ' Ton' ;
-                a3.style.display = 'block';
-                a3.style.background = 'red';
-                b3.style.display = 'block';
-                b3.style.background = '#00FF7F';
-            } 
+
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- /////////////////////////////////////////////////////////navigation/////////////////////////////////////////////////// -->
+<div class="div1" id="div1">
+    <h2 class="h11"> حساب الاجهاد علي الوايرات <br>
+    في حالة (W,N,L,H)</h2>
+    <h1 class="t1" id="t1"></h1>
+    <input class="input2" id="W" type="number" placeholder="وزن الطرد "> <br>
+    <input class="input2"  id="N" type="number" placeholder="عدد الوايرات "> <br>
+    <input class="input2" id="Len" type="number" placeholder="طول الوايرات"> <br>
+    <input class="input2" id="H" type="number" placeholder="الارتفاع"> <br>
+    <br>
+    <br> 
+    <button  class="but" id="but3">اضغط</button>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="teation21" class="teation21">
+        <h1 class="h11">حساب الاجهاد في حالة تغير (COG)</h1>
+        <h2 id="alnatL11"></h2>
+        <h2 id="alnatL21"></h2>
+        <input id="W11" type="number" placeholder="W">
+        <input id="D11" type="number" placeholder="D1">
+        <input id="D21" type="number" placeholder="D2">
+        <input id="L11" type="number" placeholder="L1">
+        <input id="L21" type="number" placeholder="L2">
+        <input id="H11" type="number" placeholder="H1">
+        <div class="buta7ceb1">
+            <button id="but51">امسح</button>
+            <button id="but41">احسب</button>
+        </div>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="butomzd1" id="butomzd1">
+    <h1>كود الانشاءات والصناعات</h1>
+    <br>
+    <h1>لعام 2020</h1>
+    <Embed src="pdf/Copy of Copy of CFR-2020-title29-vol8 (1926).pdf" ></Embed>
+    <br>
+    <Embed src="pdf/Copy of Copy of CFR-2020-title29-vol5 (1900-1910).pdf" ></Embed>
+    
+</div>
+<!-- --------------------------------------------------------- -->
+<div class="butomzd1" id="butomzd2">
+    <img class="imges" src="emg/LEL,UEL/شريحة1.PNG" >
+    <img class="imges" src="emg/LEL,UEL/شريحة2.PNG">
+    <img class="imges" src="emg/LEL,UEL/شريحة3.PNG">
+    <img class="imges" src="emg/LEL,UEL/شريحة4.PNG">
+    <img class="imges" src="emg/LEL,UEL/شريحة5.PNG">
+    <img class="imges" src="emg/LEL,UEL/شريحة6.PNG">
+</div>
+<!-- --------------------------------------------------------- -->
+<div class="butomzd1" id="butomzd3">
+    <h1> ....جاري الاعداد</h1>
+</div>
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="alnatL12"></div>
+<div id="Lifting" class="Lifting">
+        <h1 class="h12">Lifting Plan</h1>
+        <input id="Crane" type="text" placeholder="Crane Model & Manufacturer">
+        <input id="Maximum" type="number" placeholder="Maximum Capacity (SWL)">
+        <input id="Block" type="number" placeholder="Block Weight (Kg)---(b)">
+        <input id="Boom" type="number" placeholder="Boom Length">
+        <input id="Radius" type="number" placeholder="Radius (m)">
+        <input id="Counterweight" type="number" placeholder="Counterweight (ton)">
+        <input id="Outriggers" type="number" placeholder="Outriggers Extension%">
+        <input id="Rated" type="number" placeholder="Rated Capacity---(RC)">
+        <input id="Total" type="number" placeholder="Total Weight of Gears (Kg)---(c)">
+        <input id="Weight" type="number" placeholder="Load Weight(ton)">
+        <input id="Contingency" type="number" placeholder="Contingency Factor (CF)">
+        <input id="Dynamic" type="number" placeholder="Dynamic Amplification Factor (DAF)">
+        <div class="buta7ceb11">
+            <button id="but411">احسب</button>
+        </div>
+    </div>
+    <button id="but511">تعديل</button>
+    <button id="download"><span class="material-symbols-outlined">
+download
+</span></button>
+<script>
+        document.getElementById('download').addEventListener('click', function() {
+            // 1. تحديد العنصر المراد تحويله
+            const element = document.getElementById('alnatL12');
+
+            // 2. إعداد خيارات التحويل (اختياري)
+            const options = {
+                margin: 10,
+                filename: 'Lifting-Plan.Mansour.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            // 3. بدء عملية التحويل والحفظ
+            html2pdf()
+                .set(options)
+                .from(element)
+                .save();
+        });
+</script>
+<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="mn1n1m1" id="mn1n1m1" >
+    <button class="butomz" id="butomz4"><h1>Lifting</h1></button>
+    <button class="butomz" id="butomz1"><h1>الاكواد</h1></button>
+    <button class="butomz" id="butomz2"><h1>LEL,UEL</h1></button>
+    <button class="butomz" id="butomz3"><h1>Pa,Pb</h1></button>
+    <button class="butomz" id="butomz5"><h1>الاماكن المغقة</h1></button>
+</div>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <div class="c" id="c">
+        <h2>حسابات الرفع الترادفي (Tandem Lift)</h2>
+        
+        <div class="is">
+            <div class="ig">
+                <label for="w">الوزن الإجمالي (WLodTL) (طن):</label>
+                <input type="number" id="w" placeholder="مثال: 100">
+            </div>
+            
+            <div class="ig">
+                <label for="d1">المسافة D1 (متر):</label>
+                <input type="number" id="d1" placeholder="مثال: 3">
+            </div>
+
+            <div class="ig">
+                <label for="d2">المسافة D2 (متر):</label>
+                <input type="number" id="d2" placeholder="مثال: 2">
+            </div>
+
+            <div class="ig">
+                <label for="d3">المسافة D3 (متر):</label>
+                <input type="number" id="d3" placeholder="مثال: 1">
+            </div>
+        </div>
+        
+        <button id="b">احسب جدول الزوايا (0° - 90°)</button>
+
+        <div id="rc" style="display:none;">
+            <h3>نتائج الحسابات لكل زاوية</h3>
+            <div id="res"></div>
+        </div>
+    </div>
+
+    <script>
+        // اختصار الدالة
+        function degToRad(d) {
+            return d * (Math.PI / 180);
         }
-        list.onclick = function(){
-            poweraa.style.display = 'block';
-            img.style.display = 'none';
-            poweraaa.style.display = 'none';
-            pppp.style.display = 'none';
-            teation21.style.display = 'none';
-            div1.style.display = 'none';
-            mn1n1m1.style.display = 'none';
-            butomzd1.style.display= 'none';
-            butomzd2.style.display= 'none';
-            Lifting.style.display = 'none';
-            alnatL12.style.display = 'none';
-            but511.style.display = 'none';
-            download.style.display = 'none';
-            c.style.display = 'none';      
-        }
-/////////////////////////////////////////////معادلة حمولة الواير/////////////////////////////////////////////
-        home.onclick = function(){
-            mn1n1m1.style.display= 'block';
-            poweraa.style.display= 'none';
-            poweraaa.style.display= 'none';
-            img.style.display= 'block';
-            div1.style.display= 'none';
-            pppp.style.display= 'block';
-            teation21.style.display= 'none';
-            butomzd1.style.display= 'none';
-            butomzd2.style.display= 'none';
-            Lifting.style.display = 'none';
-            alnatL12.style.display = 'none';
-            but511.style.display = 'none';
-            download.style.display = 'none';
-            c.style.display = 'none';
-        }
-        // عدد الكلبسات لربط الواير////////////////
-        let poweraaa = document.getElementById('poweraaa');
-        let b4 = document.getElementById('b4');
-        let but1 = document.getElementById('but1');
-        let in3 = document.getElementById('in3');
-        let settings = document.getElementById('settings');
-        but1.onclick = function(){
-            let m = in3.value * 0.04;
-            let mm = m * 4 +1;
-            if( mm >= 1 && in3.value !=''){
-                b4.innerHTML = Math.ceil(mm);
-                b4.style.background = '#00FF7F';
+
+        // اختصار الدالة الرئيسية
+        function calcTandem() {
+            // 1. الحصول على العناصر المدخلة عبر IDs الجديدة
+            const wEl = document.getElementById('w');
+            const d1El = document.getElementById('d1');
+            const d2El = document.getElementById('d2');
+            const d3El = document.getElementById('d3');
+            const resDiv = document.getElementById('res');
+            const resCont = document.getElementById('rc');
+
+            // 2. التحقق من المدخلات
+            if (!wEl.value || !d1El.value || !d2El.value || !d3El.value) {
+                alert("يرجى إدخال جميع قيم الوزن والمسافات.");
+                resDiv.innerHTML = '';
+                resCont.style.display = 'none';
+                return;
             }
-        }
-            settings.onclick = function(){
-                poweraa.style.display = 'none';
-                img.style.display = 'none';
-                pppp.style.display = 'none';
-                div1.style.display = 'none';
-                poweraaa.style.display = 'block';
-                teation21.style.display = 'none';
-                mn1n1m1.style.display = 'none';
-                butomzd1.style.display= 'none';
-                butomzd2.style.display= 'none';
-                Lifting.style.display = 'none';
-                alnatL12.style.display = 'none';
-                but511.style.display = 'none';
-                download.style.display = 'none';
-                c.style.display = 'none';
-        }
-        // عدد الكلبسات لربط الواير////////////////
-        let lista = document.getElementById('lista');
-        let div1 = document.getElementById('div1');
-        lista.onclick = function(){
-                poweraa.style.display = 'none';
-                img.style.display = 'none';
-                pppp.style.display = 'none';
-                poweraaa.style.display = 'none';
-                div1.style.display = 'block';
-                teation21.style.display = 'none';
-                mn1n1m1.style.display = 'none';
-                butomzd1.style.display= 'none';
-                butomzd2.style.display= 'none';
-                Lifting.style.display = 'none';
-                alnatL12.style.display = 'none';
-                but511.style.display = 'none';
-                download.style.display = 'none';
-                c.style.display = 'none';
-        }
-    let alnatL11 = document.getElementById('alnatL11');
-    let alnatL21 = document.getElementById('alnatL21');
-    let W11 = document.getElementById('W11');
-    let D11 = document.getElementById('D11');
-    let D21 = document.getElementById('D21');
-    let L11= document.getElementById('L11');
-    let L21 = document.getElementById('L21');
-    let H11 = document.getElementById('H11');
-    let but41 = document.getElementById('but41');
-    let but51 = document.getElementById('but51');
-    but41.onclick = function(){
-        if(W11.value && D11.value && D21.value && L11.value && L21.value && H11.value !=''){
-                let bast11 = W11.value * D21.value * L11.value ;
-                let mkam11 = H11.value * (+D11.value + +D21.value);
-                alnatL11.innerHTML = 'tension wire-1 >>' + (bast11 / mkam11).toFixed(1) + 'Ton';
-                alnatL11.style.background = '#00ff3c';
-                alnatL21.style.background = '#009eff';
-                let bast21 = W11.value * D11.value * L21.value;
-                let mkam21 = H11.value * (+D11.value + +D21.value);
-                alnatL21.innerHTML = 'tension wire-2  >>'+ (bast21 / mkam21).toFixed(1) + 'Ton';
-                alnatL11.style.display = 'block';
-                alnatL21.style.display = 'block';
-        }
-    }
-    but51.onclick = function(){
-        W11.value = '';
-        D11.value = '';
-        D21.value = '';
-        L11.value = '';
-        L21.value = '';
-        H11.value = '';
-        alnatL11.style.display = 'none';
-        alnatL21.style.display = 'none';
-        Lifting.style.display = 'none';
-        alnatL12.style.display = 'none';
-        but511.style.display = 'none';
-    }
-    none1111.onclick = function(){
-        poweraa.style.display = 'none';
-        img.style.display = 'none';
-        pppp.style.display = 'none';
-        poweraaa.style.display = 'none';
-        teation21.style.display = 'block';
-        div1.style.display = 'none';
-        mn1n1m1.style.display = 'none';
-        butomzd1.style.display= 'none';
-        butomzd2.style.display= 'none';
-        Lifting.style.display = 'none';
-        alnatL12.style.display = 'none';
-        but511.style.display = 'none';
-        download.style.display = 'none';
-        c.style.display = 'none';
-    }
-// ---------------------------------------------------------------------
-    butomz1.onclick = function(){
-        teation21.style.display = 'none';
-        poweraa.style.display = 'none';
-        img.style.display = 'none';
-        pppp.style.display = 'none';
-        poweraaa.style.display = 'none';
-        div1.style.display = 'none';
-        mn1n1m1.style.display = 'none';
-        Lifting.style.display = 'none';
-        alnatL12.style.display = 'none';
-        butomzd1.style.display = 'block';
-        but511.style.display = 'none';
-        download.style.display = 'none';
-        c.style.display = 'none';
-    }
-    butomz2.onclick = function(){
-        teation21.style.display = 'none';
-        poweraa.style.display = 'none';
-        img.style.display = 'none';
-        pppp.style.display = 'none';
-        poweraaa.style.display = 'none';
-        div1.style.display = 'none';
-        mn1n1m1.style.display = 'none';
-        butomzd1.style.display = 'none';
-        Lifting.style.display = 'none';
-        alnatL12.style.display = 'none';
-        but511.style.display = 'none';
-        download.style.display = 'none';
-        butomzd2.style.display = 'block';
-        c.style.display = 'none';
-    }
-//------------------------------------------------------------------------
-prcentcreansbut.onclick = function(){
-    let yosaue = prcentcrean1.value / prcentcreans.value * 100 ;
-    if(yosaue <= 75 ){
-        b44.innerHTML = yosaue.toFixed(1) + '%' + '<br>' + 'Safe';
-        b44.style.background = 'gold';
-    }else{
-        b44.innerHTML = yosaue.toFixed(1) + '%' + '<br>' + 'Unsafe';
-        b44.style.background = 'red';
-    }
-}
-////////////////////////////////////////////////////////////////////////////////////
-but411.onclick = function(){
 
-    if(Weight.value && Boom.value && Radius.value !=''){
-        let d = Weight.value  * Contingency.value ;
-        let e = +d + +Total.value / 1000 + +Block.value /1000 ;
-        let w = e * Dynamic.value ;
-        let uf = +w / +Rated.value * 100 ;
-        let vetha = Math.sqrt(Math.pow(Boom.value,2) - Math.pow(Radius.value,2)).toFixed(2)  ; 
-        let vetha1 = Math.acos(Radius.value / Boom.value) * (180 / Math.PI) ;
-        alnatL12.innerHTML = "* Lifting Plan: " + "<br>" + "<br>" 
-        + '1- Crane Model & Manufacturer : '+ Crane.value + "<br>" 
-        + '2- Maximum Capacity(SWL): '+ Maximum.value + ' Ton' + "<br>" 
-        + '3- Block Weight(Kg)--(b)  : ' + Block.value + " Kg" + "<br>" 
-        + '4- Boom Length : '+ Boom.value +  " m" +"<br>" 
-        + '5- Radius : '+ Radius.value + ' m'+ "<br>" 
-        + '6- Counterweight : '+ Counterweight.value + ' Ton'+ "<br>" 
-        + '7- Outriggers : '+ Outriggers.value + ' %'+ "<br>" 
-        + '8- Rated Capacity--(RC) : '+ Rated.value + ' Ton'+ "<br>" 
-        + '9- Total Weight of Gears(Kg)--(c) : '+ Total.value + ' Kg'+ "<br>" 
-        + '10- Load Weight(a) : '+ Weight.value + ' Ton'+ "<br>" 
-        + '11- Contingency Factor (CF) : '+ Contingency.value  +  "<br>" 
-        + '12- Safe Load Weight (d)(d=aXCF) = '+ d.toFixed(2) + "<br>" 
-        + '13- Total lifted weight(e)(e=d+c+b) = '+ e.toFixed(2) + "<br>" 
-        + '14- Dynamic Amplification Factor(DAF) = '+ Dynamic.value +  "<br>" 
-        + '15- Calculation Weight(w)(w=e*DAF) = '+ w.toFixed(2) +  "<br>" 
-        + '16- Utilization Factor(UF)(UF=w/RC) = '+ uf.toFixed(2)  + ' %' + "<br>" 
-        + '------------------------------------------------' + "<br>" 
-        + "* Angles : " + "<br>" + "<br>" 
-        + "17- Height = " + vetha + " m" + "<br>"
-        + "18- Angle Boom = " + vetha1.toFixed(1) + ' ْ' + "<br>"
-        + "19- Crane Support  = " + (Math.sqrt( Maximum.value / 5) * 30.48).toFixed(2)  + "cm";
-        Lifting.style.display = 'none';
-        but511.style.display = 'block';
-        download.style.display = 'block';
-        alnatL12.style.display = 'block';
-    }
-}
-but511.onclick = function(){
-    Lifting.style.display = 'block';
-    alnatL12.style.display = 'none';
-    but511.style.display = 'none';
-    download.style.display = 'none'; 
-    c.style.display = 'none';
-}
-butomz4.onclick = function(){
-        Lifting.style.display = 'block';
-        teation21.style.display = 'none';
-        poweraa.style.display = 'none';
-        img.style.display = 'none';
-        pppp.style.display = 'none';
-        poweraaa.style.display = 'none';
-        div1.style.display = 'none';
-        mn1n1m1.style.display = 'none';
-        butomzd1.style.display = 'none';
-        butomzd2.style.display = 'none';
-        c.style.display = 'none';
-}
-////////////////////////////////////////////////////////////////////////////////////
-let c = document.getElementById('c');
-let butomz3 = document.getElementById('butomz3');
-butomz3.onclick = function(){
-        Lifting.style.display = 'none';
-        teation21.style.display = 'none';
-        poweraa.style.display = 'none';
-        img.style.display = 'none';
-        pppp.style.display = 'none';
-        poweraaa.style.display = 'none';
-        div1.style.display = 'none';
-        mn1n1m1.style.display = 'none';
-        butomzd1.style.display = 'none';
-        butomzd2.style.display = 'none';
-        c.style.display = 'block';
-}
+            // 3. تحويل المدخلات إلى أرقام
+            const WLodTL = +wEl.value; 
+            const D1 = +d1El.value;
+            const D2 = +d2El.value;
+            const D3 = +d3El.value;
+            
+            // 4. بناء رأس الجدول
+            let tHTML = '<table><thead><tr><th>الزاوية (°)</th><th>Pa (طن)</th><th>Pb (طن)</th><th>Da (متر)</th><th>Db (متر)</th></tr></thead><tbody>';
 
+            // 5. حلقة التكرار لجميع الزوايا من 0 إلى 90 (بخطوة 5)
+            for (let deg = 0; deg <= 90; deg += 5) {
+                const rad = degToRad(deg);
+                
+                const cos = Math.cos(rad);
+                const sin = Math.sin(rad);
 
+                // حساب Da و Db
+                const Da = (D1 * cos + D3 * sin);
+                const Db = D2 * cos;
+                const DL = Da + Db ; // مجموع الأذرع
 
+                // حساب Pa و Pb
+                const Pa = WLodTL * (Db / DL); 
+                const Pb = WLodTL * (Da / DL); 
+
+                // إضافة صف جديد للجدول
+                tHTML += '<tr>';
+                tHTML += '<td>' + deg + '</td>';
+                tHTML += '<td>' + Pa.toFixed(2) + '</td>';
+                tHTML += '<td>' + Pb.toFixed(2) + '</td>';
+                tHTML += '<td>' + Da.toFixed(2) + '</td>';
+                tHTML += '<td>' + Db.toFixed(2) + '</td>';
+                tHTML += '</tr>';
+            }
+
+            // 6. إغلاق الجدول وعرض النتائج
+            tHTML += '</tbody></table>';
+            resDiv.innerHTML = tHTML;
+            resCont.style.display = 'block';
+        }
+
+        // ربط دالة الحساب بالزر عند النقر (باستخدام ID الجديد 'b')
+        document.getElementById('b').onclick = calcTandem;
+    </script>
+<script type="module" src="js.js"></script>
+</body>
+</html>
