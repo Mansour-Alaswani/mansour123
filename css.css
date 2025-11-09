@@ -6,7 +6,8 @@
 
 :root
 {
-    --cle:#515151;
+    /* تم تغيير لون النص الأساسي إلى الأسود الغامق لتباين أفضل */
+    --cle: #333333;
 }
 
 body
@@ -15,6 +16,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    /* تم الحفاظ على الخلفية الأصلية */
     background: #3c9bdead;
 }
 
@@ -22,7 +24,8 @@ body
     position: fixed;
     width: 400px;
     height: 70px;
-    background:#ffffffe8;
+    /* تم تغيير الخلفية إلى الأبيض النقي */
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,10 +97,12 @@ body
     top: -50%;
     width: 70px;
     height: 70px;
-    background: #29fd53;
-    border-radius: 50%;
-    border: 6px solid var(--cle);
+    /* تغيير لون المؤشر إلى لون أزرق/أخضر متناسق */
+    background: #007bff;
+    /* تغيير لون الحد ليتناسب مع المؤشر الجديد */
+    border: 6px solid #0056b3;
     transition: .5s;
+    border-radius: 50%;
 }
 
 .indicator::before{
@@ -109,7 +114,8 @@ body
     height: 20px;
     background: transparent;
     border-top-right-radius:20px ;
-    box-shadow: 0px 0px 0 0 #23c2f1;
+    /* إزالة ظل الظل غير الضروري */
+    box-shadow: 0px 0px 0 0 transparent;
 }
 
 .indicator::after{
@@ -121,7 +127,8 @@ body
     height: 20px;
     background: transparent;
     border-top-left-radius:20px ;
-    box-shadow: 0px -0px 0 0 #23c2f1;
+    /* إزالة ظل الظل غير الضروري */
+    box-shadow: 0px -0px 0 0 transparent;
 }
 
 
@@ -160,7 +167,7 @@ body
     padding: 9px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 5px #00000040; /* ظل أسود خفيف */
     font-size: 15px;
     position: relative;
     top: -71px;
@@ -171,7 +178,7 @@ body
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px ;
+    box-shadow: 5px 5px 5px #00000060; /* ظل أغمق عند التحويم */
     font-size: 15px;
 
 }
@@ -180,8 +187,9 @@ body
     padding: 15px;
     margin-top: 25px;
     border-radius: 8px;
-    background: greenyellow;
-    box-shadow: 10px 5px 5px ;
+    /* تغيير لون الزر إلى الأخضر المتناسق */
+    background: #28a745;
+    box-shadow: 10px 5px 5px #00000040;
     font-size: 15px;
     transition: .3s;
     position: relative;
@@ -191,6 +199,8 @@ body
 .but:hover{
     padding: 20px;
     transition: .3s;
+    /* لون أغمق عند التحويم */
+    background: #1e7e34;
 }
 
 .lod3{
@@ -211,11 +221,13 @@ body
     width: 300px;
     border-radius: 50%;
     top: 50px;
-    box-shadow: 1px 1px 54px 14px #ffffff;
+    /* تغيير لون ظل الصورة إلى الأبيض الناعم */
+    box-shadow: 1px 1px 54px 14px #ffffff90;
 }
 
 .hh1{
-    background: rgb(164, 164, 164);
+    /* لون خلفية رمادي غامق متناسق */
+    background: #6c757d;
 }
 
 p{
@@ -223,7 +235,8 @@ p{
     top: 400px;
     text-align: center;
     color: #fff;
-    box-shadow: 1px 1px 10px 10px;
+    /* تغيير لون الظل إلى الأبيض */
+    box-shadow: 1px 1px 10px 10px #ffffff40;
     border-radius: 10px;
     padding: 10px;
 }
@@ -231,10 +244,12 @@ p{
 .h11{
     text-align: center;
     color: #fff;
-    box-shadow: 1px 1px 10px 10px;
+    /* تغيير لون الظل إلى الأبيض */
+    box-shadow: 1px 1px 10px 10px #ffffff40;
     border-radius: 79px;
     padding: 5px;
     margin-bottom: 30px;
+    /* الحفاظ على التدرج الأسود الشفاف */
     background: radial-gradient(black, transparent);
     position: relative;
     top: -65px;
@@ -268,7 +283,7 @@ p{
     padding: 5px;
     margin: 5px;
     border-radius: 20px;  
-    box-shadow: 1px 1px 10px ;
+    box-shadow: 1px 1px 10px #00000040;
 }
 
 .buta7ceb1{
@@ -284,7 +299,7 @@ button{
     margin: 15px;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 5px 5px 14px 3px;
+    box-shadow: 5px 5px 14px 3px #00000040;
     font-size: 15px;
     font-style: italic; 
 }
@@ -296,7 +311,7 @@ button{
     margin: 5px;
     font-size: 20px;
     display: none;
-    box-shadow: 5px 5px 14px 3px;
+    box-shadow: 5px 5px 14px 3px #00000040;
     top: -61px;
 
 }
@@ -307,50 +322,51 @@ border-radius: 20px;
     margin: 5px;
     font-size: 20px;
     display: none;
-    box-shadow: 5px 5px 14px 3px;
+    box-shadow: 5px 5px 14px 3px #00000040;
     top: -61px;
 }
 #but41{
-    background: #47af02;
+    /* لون أخضر متناسق */
+    background: #28a745;
 }
 #but51{
-    background: #ef3603;
+    /* لون أحمر متناسق (لإظهار إجراء مختلف/سلبي) */
+    background: #dc3545;
 }
 input{
     position:relative;
     top: -50px;
 }
-/* h2{
-    position: relative;
-    top: -55px;
-    text-align: center;
-} */
+
 .mn1n1m1{
-    background: #51515129;
+    /* خلفية رمادية شفافة متناسقة */
+    background: #51515140;
     text-align: center;
     margin-top: 535px;
     margin-bottom: 130px;
     border-radius: 100px;
-    box-shadow: 8px 0px 22px 8px;        
+    box-shadow: 8px 0px 22px 8px #00000040;        
 }
 
 .butomz{
-    background: #2ceb06ed;
+    /* لون أخضر ساطع متناسق */
+    background: #17a2b8;
     width: 120px;
     height: 120px;
     border-radius: 100px;
     margin: 5px;
     color: black;
-    box-shadow: 3px 2px 10px 1px;
+    box-shadow: 3px 2px 10px 1px #00000040;
 }
 .butomz:hover{
-    background: #02a73c;
+    /* لون أغمق عند التحويم */
+    background: #138496;
     width: 120px;
     height: 120px;
     border-radius: 100px;
     margin: 5px;
     color: black;
-    box-shadow: 3px 2px 10px 1px;
+    box-shadow: 3px 2px 10px 1px #00000060;
 }
 .butomzd1{
     display: none;
@@ -390,7 +406,8 @@ Embed{
 
 #Lifting h2{
     padding: 1px;
-    background: darkorange;
+    /* لون برتقالي متناسق */
+    background: #fd7e14;
     top: 0px;
     margin: 13px;
     border-radius: 60px;
@@ -408,7 +425,8 @@ font-size: 0px;
     position: absolute;
     right: 5px;
     top: 80px;
-    background-image: linear-gradient(to left, #22ff00, rgb(98, 255, 0));
+    /* تدرج متناسق أخضر/ليموني */
+    background-image: linear-gradient(to left, #28a745, #17a2b8);
     display: none;
 }
 #download:hover{
@@ -417,11 +435,13 @@ font-size: 0px;
     position: absolute;
     right: 5px;
     top: 80px;
-    background-image: linear-gradient(to left, #1cae05, rgb(98, 255, 0));
+    /* تدرج أغمق عند التحويم */
+    background-image: linear-gradient(to left, #1e7e34, #138496);
     display: none;
 }
 #butomz4, #but511, #but411{
-    background-image: linear-gradient( to left, #ff9900, cyan );
+    /* تدرج متناسق: برتقالي إلى أزرق سماوي */
+    background-image: linear-gradient( to left, #ffc107, #17a2b8 );
     border: #000000 3px solid;
     box-shadow: rgb(0, 0, 0) 10px 10px 20px 3px;
     color: #000000;
@@ -437,8 +457,9 @@ font-size: 0px;
     top: -30px;
 }
 #alnatL12{
-background-image: linear-gradient(to left, #0f8bf1, #fffa00);
-    box-shadow: 1px 1px 20px 1px;
+    /* تدرج متناسق: أزرق إلى أصفر */
+    background-image: linear-gradient(to left, #007bff, #ffc107);
+    box-shadow: 1px 1px 20px 1px #00000040;
     border-radius: 10px;
     padding: 20px;
     margin: 1px;
@@ -463,7 +484,8 @@ background-image: linear-gradient(to left, #0f8bf1, #fffa00);
 }
 #almans{
     display: none;
-    background: #1cae05;
+    /* لون أخضر متناسق */
+    background: #28a745;
     border-radius: 20px;
     position: absolute;
     top: 25px;
@@ -476,7 +498,7 @@ background-image: linear-gradient(to left, #0f8bf1, #fffa00);
     margin: 15px;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 5px 5px 14px 3px;
+    box-shadow: 5px 5px 14px 3px #00000040;
     font-size: 15px;
     font-style: italic;
     position: relative;
@@ -486,6 +508,7 @@ background-image: linear-gradient(to left, #0f8bf1, #fffa00);
 .c{
     display: none;
 }
+
         .c { max-width: 900px; margin: auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .is {     display: grid
 ;
@@ -503,15 +526,31 @@ background-image: linear-gradient(to left, #0f8bf1, #fffa00);
     position: relative;
     top: -49px; }
         .ig input { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-        #b { width: 100%; padding: 12px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
-        #b:hover { background-color: #0056b3; }
-        #rc { margin-bottom: 100px; margin-top: 30px; padding: 15px; background-color: #e6f7ff; border: 1px solid #b3e3ff; border-radius: 5px; overflow-x: auto; }
-        #rc h3 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-top: 0; }
+        #b { width: 100%; padding: 12px; 
+            /* لون أزرق أساسي متناسق */
+            background-color: #007bff; 
+            color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s; }
+        #b:hover { 
+            /* لون أزرق أغمق عند التحويم */
+            background-color: #0056b3; 
+        }
+        #rc { margin-bottom: 100px; margin-top: 30px; padding: 15px; 
+            /* لون خلفية أزرق فاتح متناسق */
+            background-color: #e6f7ff; 
+            border: 1px solid #b3e3ff; border-radius: 5px; overflow-x: auto; }
+        #rc h3 { 
+            /* لون أزرق داكن متناسق */
+            color: #0056b3; 
+            border-bottom: 2px solid #0056b3; padding-bottom: 5px; margin-top: 0; }
         table { width: 100%; border-collapse: collapse; text-align: center; margin-top: 15px; }
-        th, td { border: 1px solid #ddd; padding: 10px 5px; }
-        th { background-color: #007bff; color: white; font-weight: bold; }
+        th, td { font-size: 15px; border: 1px solid #ddd; padding: 10px 5px; }
+        th { 
+            /* لون خلفية أزرق أساسي متناسق */
+            background-color: #007bff; 
+            color: white; font-weight: bold; }
         tr:nth-child(even) { background-color: #f2f2f2; }
-  .imgpapb{
+
+
+        .imgpapb{
             width: 100%;
         }
-
