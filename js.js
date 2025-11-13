@@ -52,6 +52,8 @@ let butomzd3 =document.getElementById('butomzd3');
     let prcentcreans = document.getElementById('prcentcreans');
     let prcentcrean1 = document.getElementById('prcentcrean1');
     let prcentcreansbut = document.getElementById('prcentcreansbut');
+    let tahmel = document.getElementById('tahmel');
+
 
     but3.onclick = function(){
         if(W.value !=''){
@@ -339,5 +341,83 @@ butomz3.onclick = function(){
         butomzd2.style.display = 'none';
         c.style.display = 'block';
 }
+        // اختصار الدالة
+        function degToRad(d) {
+            return d * (Math.PI / 180);
+        }
+
+        // اختصار الدالة الرئيسية
+        function calcTandem() {
+            // 1. الحصول على العناصر المدخلة عبر IDs الجديدة
+            const wEl = document.getElementById('w');
+            const d1El = document.getElementById('d1');
+            const d2El = document.getElementById('d2');
+            const d3El = document.getElementById('d3');
+            const resDiv = document.getElementById('res');
+            const resCont = document.getElementById('rc');
+
+            // 2. التحقق من المدخلات
+            if (!wEl.value || !d1El.value || !d2El.value || !d3El.value) {
+                alert("يرجى إدخال جميع قيم الوزن والمسافات.");
+                resDiv.innerHTML = '';
+                resCont.style.display = 'none';
+                return;
+            }
+
+            // 3. تحويل المدخلات إلى أرقام
+            const WLodTL = +wEl.value; 
+            const D1 = +d1El.value;
+            const D2 = +d2El.value;
+            const D3 = +d3El.value;
+            // 4. بناء رأس الجدول
+            let tHTML = '<table><thead><tr><th>الزاوية (°)</th><th>Pa (طن)</th><th>Pb (طن)</th><th>Da (متر)</th><th>Db (متر)</th></tr></thead><tbody>';
+
+            // 5. حلقة التكرار لجميع الزوايا من 0 إلى 90 (بخطوة 5)
+            for (let deg = 0; deg <= 90; deg += 5) {
+                const rad = degToRad(deg);
+                const cos = Math.cos(rad);
+                const sin = Math.sin(rad);
+                // حساب Da و Db
+                const Da = (D1 * cos + D3 * sin);
+                const Db = D2 * cos;
+                const DL = Da + Db ; // مجموع الأذرع
+                // حساب Pa و Pb
+                const Pa = WLodTL * (Db / DL); 
+                const Pb = WLodTL * (Da / DL); 
+                // إضافة صف جديد للجدول
+                tHTML += '<tr>';
+                tHTML += '<td>' + deg + '</td>';
+                tHTML += '<td>' + Pa.toFixed(2) + '</td>';
+                tHTML += '<td>' + Pb.toFixed(2) + '</td>';
+                tHTML += '<td>' + Da.toFixed(2) + '</td>';
+                tHTML += '<td>' + Db.toFixed(2) + '</td>';
+                tHTML += '</tr>';
+            }
+            // 6. إغلاق الجدول وعرض النتائج
+            tHTML += '</tbody></table>';
+            resDiv.innerHTML = tHTML;
+            resCont.style.display = 'block';
+        }
+        // ربط دالة الحساب بالزر عند النقر (باستخدام ID الجديد 'b')
+        document.getElementById('b').onclick = calcTandem;
 
 
+                document.getElementById('tahmel').addEventListener('click', function() {
+            // 1. تحديد العنصر المراد تحويله
+            const element = document.getElementById('res');
+
+            // 2. إعداد خيارات التحويل (اختياري)
+            const options = {
+                margin: 10,
+                filename: 'Lifting-Plan.Mansour.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            // 3. بدء عملية التحويل والحفظ
+            html2pdf()
+                .set(options)
+                .from(element)
+                .save();
+        });
+        
